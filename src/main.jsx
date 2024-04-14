@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from './App.jsx'
-import Test from './test';
+import App from './App'
+import Game from './Game';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -11,8 +11,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "test",
-    element: <Test />,
+    path: "game",
+    element: <Game />,
   },
 ]);
 
