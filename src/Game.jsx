@@ -1,7 +1,19 @@
+import Container from './Container';
+import Heading from './Heading';
+import Question from './Question';
+import Map from './Map';
+import './index.css';
+
 const Game = () => {
     return (
       <div>
-        <h1>Hello from the game page!</h1>
+        <Container />
+        <Container />
+        <Container />
+        <Container />
+        <Heading />
+        <Question />
+        <Map />
       </div>
     );
   };
