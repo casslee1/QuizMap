@@ -12,7 +12,13 @@ const App = () => {
       <nav>
         <ul>
           <li>
-            <Link to="game">game page</Link>
+          <Link to="game">game page</Link>
+          </li>
+          <li>
+          <Link to="about">about page</Link>
+          </li>
+          <li>
+          <Link to="results">results page</Link>
           </li>
         </ul>
       </nav>
