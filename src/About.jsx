@@ -1,7 +1,11 @@
+import SmallButton from './SmallButton'
+
 const About = () => {
     return (
       <div>
-       <p>test</p>
+        <SmallButton />
+        <h2>How To Play</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque, massa eu dapibus rhoncus, felis tellus</p>
       </div>
     );
   };
