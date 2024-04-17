@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Title from "./Title";
-import Description from "./Description";
-import Button from "./Button";
+import Title from "../Components/Title";
+import Description from "../Components/Description";
+import Button from "../Components/Button/Button";
 
 const App = () => {
   return (
