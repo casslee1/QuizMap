@@ -8,7 +8,7 @@ import '../Styles/index.css';
 const Game = () => {
     return (
       <div>
-        <Button />
+        <Button name="?"/>
         <Container />
         <Container />
         <Container />

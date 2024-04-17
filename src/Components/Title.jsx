@@ -1,5 +1,5 @@
 function Title() {
-    return <h1>MapQuiz</h1>;
+    return <h1>QuizMap</h1>;
 }
 
 export default Title;

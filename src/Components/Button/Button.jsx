@@ -1,7 +1,15 @@
-/*import styles from './Button.module.css'*/ 
+import PropTypes from 'prop-types';
+/*import './Button.module.css';*/
 
-function Button() {
-    return <button>Play Now</button>;
+function Button(props) {
+    return (
+    <button>{props.name}</button>
+    );
 }
 
+Button.propTypes = {
+    name: PropTypes.string
+  }
+
 export default Button;
+
