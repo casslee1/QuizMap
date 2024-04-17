@@ -5,7 +5,7 @@ import App from './Routes/App';
 import Game from './Routes/Game';
 import About from './Routes/About';
 import Results from './Routes/Results';
-import './index.css';
+import './Styles/index.css';
 
 const router = createBrowserRouter([
   {

@@ -3,7 +3,7 @@ import Heading from '../Components/Heading';
 import Question from '../Components/Question';
 import Map from '../Components/Map';
 import Button from '../Components/Button/Button';
-import '../index.css';
+import '../Styles/index.css';
 
 const Game = () => {
     return (
