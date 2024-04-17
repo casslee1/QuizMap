@@ -1,7 +1,14 @@
 import '../Styles/index.css';
+import PropTypes from 'prop-types';
 
-function Container() {
-    return <div className="container"> <p>Answer Image</p> </div>;
+function Container(props) {
+    return (
+    <div className="container"> <p>{props.boxNum}</p> </div>
+    );
 }
+
+Container.propTypes = {
+    boxNum: PropTypes.string
+  };
 
 export default Container;

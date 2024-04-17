@@ -1,5 +1,13 @@
-function Question() {
-    return <p>This is the question...</p>;
+import PropTypes from 'prop-types';
+
+function Question(props) {
+    return (
+    <p>{props.question}</p>
+    );
 }
+
+Question.propTypes = {
+    question: PropTypes.string
+};
 
 export default Question;

@@ -9,12 +9,12 @@ const Game = () => {
     return (
       <div>
         <Button name="?"/>
-        <Container />
-        <Container />
-        <Container />
-        <Container />
+        <Container boxNum="1"/>
+        <Container boxNum="2"/>
+        <Container boxNum="3"/>
+        <Container boxNum="4"/>
         <Heading />
-        <Question />
+        <Question question="Foo?"/>
         <Map />
       </div>
     );
