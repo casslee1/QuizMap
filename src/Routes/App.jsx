@@ -8,7 +8,7 @@ const App = () => {
     <div>
       <Title />
       <Description />
-      <Button name="Play"/>
+      <Button name="Play" />
       <nav>
         <ul>
           <li>
