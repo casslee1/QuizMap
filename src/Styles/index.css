@@ -37,4 +37,5 @@
 }
 
 .mapWrapper {
+  display: flex;
 }
