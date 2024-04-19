@@ -1,5 +1,4 @@
-import Container from '../Components/Container';
-import Heading from '../Components/Heading';
+import Box from '../Components/Box';
 import Question from '../Components/Question';
 import Map from '../Components/Map';
 import Button from '../Components/Button/Button';
@@ -8,14 +7,31 @@ import '../Styles/index.css';
 const Game = () => {
     return (
       <div>
-        <Button name="?"/>
-        <Container boxNum="1"/>
-        <Container boxNum="2"/>
-        <Container boxNum="3"/>
-        <Container boxNum="4"/>
-        <Heading />
-        <Question question="Foo?"/>
-        <Map />
+
+        <div className="smallButtonWrapper">
+         <Button name="?"/>
+        </div>
+
+        <div className="gameWrapper">
+
+          <div className="boxWrapper">
+           <Box boxNum="1"/>
+           <Box boxNum="2"/>
+           <Box boxNum="3"/>
+           <Box boxNum="4"/>
+          </div>
+
+          <div>
+           <h2>Question</h2>
+           <Question question="Foo?"/>
+          </div>
+
+          <div className="mapWrapper">
+           <Map />
+          </div>
+
+        </div>
+
       </div>
     );
   };
