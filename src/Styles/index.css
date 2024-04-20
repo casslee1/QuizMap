@@ -18,6 +18,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fefbe9;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 10%;
 }
 
 .gameWrapper {

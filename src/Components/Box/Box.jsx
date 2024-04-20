@@ -1,4 +1,4 @@
-import '../Styles/index.css';
+import '../../Styles/index.css'
 import PropTypes from 'prop-types';
 
 function Box(props) {

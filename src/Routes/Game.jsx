@@ -1,7 +1,7 @@
-import Box from '../Components/Box';
+import Box from '../Components/Box/Box';
 import Question from '../Components/Question';
-import Map from '../Components/Map';
-import Button from '../Components/Button/Button';
+import Map from '../Components/Map/Map';
+import SmallButton from '../Components/SmallButton/SmallButton';
 import '../Styles/index.css';
 
 const Game = () => {
@@ -9,7 +9,7 @@ const Game = () => {
       <div>
 
         <div className="smallButtonWrapper">
-         <Button name="?"/>
+         <SmallButton smButName="?"/>
         </div>
 
         <div className="gameWrapper">

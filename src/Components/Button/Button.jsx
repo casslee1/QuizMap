@@ -1,18 +1,6 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
-/*import './Button.module.css';*/
-
-/*function Button(props) {
-    return (
-    <button>{props.name}</button>
-    );
-}
-
-Button.propTypes = {
-    name: PropTypes.string
-  };
-
-export default Button;*/
+import styles from './button.module.css'
 
 function Button(props) {
     const navigate = useNavigate();
@@ -22,7 +10,7 @@ function Button(props) {
     };
 
     return (
-      <button onClick={handleClick}>{props.name}</button>
+      <button className={styles.playButton} onClick={handleClick}>{props.name}</button>
     );
   }
 
@@ -31,3 +19,4 @@ function Button(props) {
   };
 
   export default Button;
+

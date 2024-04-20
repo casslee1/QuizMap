@@ -1,4 +1,4 @@
-import '../Styles/index.css';
+import '../../Styles/index.css'
 
 function Map() {
     return <div className="map"> <p>The Map</p> </div>;
