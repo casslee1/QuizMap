@@ -5,7 +5,7 @@ const About = () => {
     return (
       <div>
 
-        <div>
+        <div className="background">
 
           <div className="smallButtonWrapper">
           <Button name="X"/>

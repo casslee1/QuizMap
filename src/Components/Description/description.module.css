@@ -1,0 +1,17 @@
+.robotoRegular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #2f0f5d;
+  font-size: 30px;
+}
+
+.descFormat {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0%;
+  padding-bottom: 10%;
+  text-align: center;
+}

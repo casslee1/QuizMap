@@ -1,6 +1,13 @@
 .playButton {
-  background-color: #e1eedd;
+  background-color: #f5f3c1;
   border-radius: 12px;
-  font-size: large;
-  padding: 5px;
+  border-color: #2f0f5d;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #2f0f5d;
 }
