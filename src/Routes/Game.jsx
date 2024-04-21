@@ -8,30 +8,32 @@ const Game = () => {
     return (
       <div>
 
+        <div className='background'>
+
         <div className="smallButtonWrapper">
          <SmallButton smButName="?"/>
         </div>
 
-        <div className="gameWrapper">
+          <div className="gameWrapper">
 
-          <div className="boxWrapper">
-           <Box boxNum="1"/>
-           <Box boxNum="2"/>
-           <Box boxNum="3"/>
-           <Box boxNum="4"/>
+            <div className="boxWrapper">
+             <Box boxNum="1"/>
+             <Box boxNum="2"/>
+             <Box boxNum="3"/>
+             <Box boxNum="4"/>
+            </div>
+
+            <div>
+             <h2>Question</h2>
+             <Question question="Foo?"/>
+            </div>
+
+            <div className="mapWrapper">
+             <Map />
+            </div>
+
           </div>
-
-          <div>
-           <h2>Question</h2>
-           <Question question="Foo?"/>
-          </div>
-
-          <div className="mapWrapper">
-           <Map />
-          </div>
-
         </div>
-
       </div>
     );
   };

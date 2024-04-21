@@ -6,6 +6,12 @@
   color: #2f0f5d;
 }
 
+h2 {
+  color: #2f0f5d;
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 30px;
+}
+
 .box {
   border-style: solid;
   border-color: black;
@@ -18,8 +24,8 @@
   border-style: solid;
   border-color: black;
   border-width: 2px;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 450px;
 }
 
 .background {
