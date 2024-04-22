@@ -1,5 +1,5 @@
 import Box from '../Components/Box/Box';
-import Question from '../Components/Question';
+import Question from '../Components/Questions/Question';
 import Map from '../Components/Map/Map';
 import SmallButton from '../Components/SmallButton/SmallButton';
 import '../Styles/index.css';

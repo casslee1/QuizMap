@@ -1,0 +1,8 @@
+.boxes {
+  border-style: solid;
+  border-color: black;
+  background-color: #0ea293;
+  border-width: 2px;
+  width: 100px;
+  height: 100px;
+}

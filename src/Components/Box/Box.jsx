@@ -1,9 +1,9 @@
-import '../../Styles/index.css'
+import styles from './box.module.css';
 import PropTypes from 'prop-types';
 
 function Box(props) {
     return (
-    <div className="box"> <p>{props.boxNum}</p> </div>
+    <div className={styles.boxes}> <p>{props.boxNum}</p> </div>
     );
 }
 

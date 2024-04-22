@@ -12,22 +12,6 @@ h2 {
   font-size: 30px;
 }
 
-.box {
-  border-style: solid;
-  border-color: black;
-  border-width: 2px;
-  width: 100px;
-  height: 100px;
-}
-
-.map {
-  border-style: solid;
-  border-color: black;
-  border-width: 2px;
-  width: 400px;
-  height: 450px;
-}
-
 .background {
   background-color: #99f1e3;
   position: absolute;

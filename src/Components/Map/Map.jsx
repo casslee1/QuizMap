@@ -1,7 +1,7 @@
-import '../../Styles/index.css'
+import styles from './map.module.css';
 
 function Map() {
-    return <div className="map"> <p>The Map</p> </div>;
+    return <div className={styles.map}> <p>The Map</p> </div>;
 }
 
 export default Map;
