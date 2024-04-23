@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import styles from './smallButton.module.css'
 
 function SmallButton(props) {
-    const navigate = useNavigate();
+   
   
     const handleClick = () => {
-      navigate('/game');
+      props.onClick();
     };
 
     return (
@@ -16,6 +16,7 @@ function SmallButton(props) {
 
   SmallButton.propTypes = {
     smButName: PropTypes.string,
+    onClick: PropTypes.func
   };
 
   export default SmallButton;
