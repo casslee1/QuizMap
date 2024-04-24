@@ -1,4 +1,4 @@
-import SmallButton from '../Components/SmallButton/SmallButton';
+import Button from '../Components/Button/Button';
 import "../Styles/index.css"
 
 const About = () => {
@@ -8,7 +8,7 @@ const About = () => {
         <div className="background">
 
           <div className="smallButtonWrapper">
-          <SmallButton smButName="X"/>
+          <Button name="X"/>
           </div>
 
           <div className="descriptionWrapper">

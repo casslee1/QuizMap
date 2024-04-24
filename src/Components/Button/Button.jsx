@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom';
 import styles from './button.module.css'
 
 function Button(props) {
-    const navigate = useNavigate();
-  
+      
     const handleClick = () => {
-      navigate('/game');
+      
     };
 
     return (
@@ -16,6 +14,7 @@ function Button(props) {
 
   Button.propTypes = {
     name: PropTypes.string,
+    onClick: PropTypes.func
   };
 
   export default Button;
