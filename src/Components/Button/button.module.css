@@ -11,3 +11,14 @@
   font-weight: 400;
   color: #2f0f5d;
 }
+
+.smallButton {
+  background-color: orange;
+  border-radius: 5px;
+  border-color: #2f0f5d;
+  font-size: 15px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #2f0f5d;
+}

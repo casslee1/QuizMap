@@ -4,6 +4,7 @@ import Button from "../Components/Button/Button";
 import CompassRose from "../Images/CompassRose.png";
 import "../Styles/index.css"
 
+
 const App = () => {
   return (
     <div className="background">
@@ -16,7 +17,7 @@ const App = () => {
         <Description descText="Welcome! Answer a series of trivia questions by finding the location of the answer on a map." />
       
         <div>
-        <Button name="Play" />
+        <Button name="Play" buttonStyle="playButton"/>
         </div>
 
         <div className="compassContainer">

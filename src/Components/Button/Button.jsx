@@ -3,19 +3,24 @@ import styles from './button.module.css'
 
 function Button(props) {
       
-    const handleClick = () => {
+   /* const handleClick = () => {
       
-    };
+    };*/
+
+
 
     return (
-      <button className={styles.playButton} onClick={handleClick}>{props.name}</button>
+      <button className={styles[props.buttonStyle]}>{props.name}</button>
     );
   }
 
   Button.propTypes = {
     name: PropTypes.string,
-    onClick: PropTypes.func
+    /*onClick: PropTypes.func,*/
+    buttonStyle: PropTypes.string
+       
   };
 
   export default Button;
 
+/*onClick={handleClick}*/
