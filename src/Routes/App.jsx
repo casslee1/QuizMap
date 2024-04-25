@@ -17,7 +17,7 @@ const App = () => {
         <Description descText="Welcome! Answer a series of trivia questions by finding the location of the answer on a map." />
       
         <div>
-        <Button name="Play" buttonStyle="playButton"/>
+        <Button name="Play" buttonStyle="playButton" whereTo="game"/>
         </div>
 
         <div className="compassContainer">

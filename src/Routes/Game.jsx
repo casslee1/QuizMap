@@ -11,7 +11,7 @@ const Game = () => {
         <div className='background'>
 
         <div className="smallButtonWrapper">
-         <Button name="?"/>
+         <Button name="?" buttonStyle="smallButton" whereTo="/about"/>
         </div>
 
           <div className="gameWrapper">

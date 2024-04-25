@@ -8,7 +8,7 @@ const About = () => {
         <div className="background">
 
           <div className="smallButtonWrapper">
-          <Button name="X"/>
+          <Button name="X" buttonStyle="smallButton" whereTo="/game"/>
           </div>
 
           <div className="descriptionWrapper">
