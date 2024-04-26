@@ -1,3 +1,4 @@
+import styles from './question.module.css';
 /*import PropTypes from 'prop-types';*/
 
 
@@ -22,8 +23,16 @@ function Question() {
     const day = weekdays[dayOfWeek];
       
     return (
+    <div>
+
     <p>{day}</p>
+
+    <div className={styles.map}> <p>The Map</p> </div>
+    
+    </div>
     );
+
+    
 }
 
 

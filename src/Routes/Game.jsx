@@ -1,8 +1,8 @@
 import Box from '../Components/Box/Box';
 import Question from '../Components/Questions/Question';
-import Map from '../Components/Map/Map';
 import Button from '../Components/Button/Button';
 import '../Styles/index.css';
+import { useState } from 'react';
 
 const Game = () => {
     return (
@@ -26,10 +26,6 @@ const Game = () => {
             <div>
              <h2>Question</h2>
              <Question question="Foo?"/>
-            </div>
-
-            <div className="mapWrapper">
-             <Map />
             </div>
 
           </div>

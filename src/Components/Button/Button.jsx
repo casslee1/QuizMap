@@ -10,9 +10,8 @@ function Button(props) {
     );
   }
 
-  Button.propTypes = {
+Button.propTypes = {
     name: PropTypes.string,
-    
     buttonStyle: PropTypes.string,
     whereTo: PropTypes.string  
   };
