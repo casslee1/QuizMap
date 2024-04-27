@@ -2,7 +2,7 @@ import Box from '../Components/Box/Box';
 import Question from '../Components/Questions/Question';
 import Button from '../Components/Button/Button';
 import '../Styles/index.css';
-import { useState } from 'react';
+/*import { useState } from 'react';*/
 
 const Game = () => {
     return (
