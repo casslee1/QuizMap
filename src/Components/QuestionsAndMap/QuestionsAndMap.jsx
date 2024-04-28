@@ -1,4 +1,4 @@
-import styles from './question.module.css';
+import styles from './questionsAndMap.module.css';
 /*import PropTypes from 'prop-types';*/
 
 
@@ -15,7 +15,7 @@ Question.propTypes = {
 
 export default Question;*/
 
-function Question() {
+function QuestionsAndMap() {
 
     const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const currentDate = new Date();
@@ -36,4 +36,4 @@ function Question() {
 }
 
 
-export default Question;
+export default QuestionsAndMap;

@@ -1,21 +1,11 @@
 import { useState, useEffect } from "react";
 import Box from '../Components/Box/Box';
-/*import Question from '../Components/Questions/Question';*/
-import Question from "../Classes/question";
+import QuestionsAndMap from '../Components/QuestionsAndMap/QuestionsAndMap';
 import Button from '../Components/Button/Button';
 import '../Styles/index.css';
+import { getTodaysQuestions } from "../Classes/GetTodaysQuestions";
 
 const Game = () => {
-
-  const getTodaysQuestions = () => {
-    return [
-        new Question ("This is question number one"),
-        new Question ("This is question number two"),
-        new Question ("This is question number three"),
-        new Question ("This is question number four")
-    ]
-        
-};
 
 const [selectedQuestion, setSelectedQuestion] = useState(0);
 const [questions, setQuestions] = useState();
@@ -24,8 +14,6 @@ useEffect(() => {
     const questions = getTodaysQuestions();
     setQuestions(questions);
 }, []);
-
-
 
     return (
       <div>
@@ -46,9 +34,9 @@ useEffect(() => {
             </div>
 
             <div>
-             <h2>Question</h2>
-             Selected Question: {questions == null ? "None" : questions[selectedQuestion].questionText}
-           
+             <h2>Question {selectedQuestion + 1}</h2>
+             {questions == null ? "None" : questions[selectedQuestion].questionText}
+             <QuestionsAndMap />
             </div>
 
           </div>
@@ -59,4 +47,4 @@ useEffect(() => {
   
   export default Game;
 
-  /*<Question question="Foo?"/>*/
+  /*<QuestionsAndMap question="Foo?"/>*/
