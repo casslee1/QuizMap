@@ -1,8 +1,17 @@
 .boxes {
   border-style: solid;
   border-color: black;
-  background-color: #0ea293;
+  background-color: #94c2bd;
   border-width: 2px;
+  width: 100px;
+  height: 100px;
+}
+
+.selectedBox {
+  border-style: solid;
+  border-color: yellow;
+  background-color: white;
+  border-width: 4px;
   width: 100px;
   height: 100px;
 }

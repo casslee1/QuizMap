@@ -8,7 +8,14 @@ function Box(props) {
 }
 
 Box.propTypes = {
-    boxNum: PropTypes.string
+    boxNum: PropTypes.string,
+    boxStyle: PropTypes.string
   };
 
 export default Box;
+
+/*function Box(props) {
+  return (
+  <div className={styles[props.boxStyle]}> <p>{props.boxNum}</p> </div>
+  );
+}*/

@@ -7,7 +7,7 @@ import "../Styles/index.css"
 
 const App = () => {
   return (
-    <div className="background">
+    <div className="backgroundLanding">
 
       <div className="appWrapper">
         <div>
