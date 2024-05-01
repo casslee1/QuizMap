@@ -8,3 +8,16 @@ export const getTodaysQuestions = () => {
     new Question("This is question number four"),
   ];
 };
+
+const weekdays = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+const currentDate = new Date();
+const dayOfWeek = currentDate.getDay();
+const day = weekdays[dayOfWeek];
