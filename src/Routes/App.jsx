@@ -1,4 +1,5 @@
 /*import { Link } from "react-router-dom";*/
+import { useNavigate } from "react-router-dom";
 import Description from "../Components/Description/Description";
 import Button from "../Components/Button/Button";
 import CompassRose from "../Images/CompassRose.png";
@@ -6,6 +7,12 @@ import "../Styles/index.css"
 
 
 const App = () => {
+
+  const navigate = useNavigate()
+
+  
+  
+
   return (
     <div className="backgroundLanding">
 
@@ -17,7 +24,7 @@ const App = () => {
         <Description descText="Welcome! Answer a series of trivia questions by finding the location of the answer on a map." />
       
         <div>
-        <Button name="Play" buttonStyle="playButton" whereTo="game"/>
+        <Button name="Play" buttonStyle="playButton" handleClick={()=>{navigate("game")}}/>
         </div>
 
         <div className="compassContainer">

@@ -1,5 +1,26 @@
 import PropTypes from 'prop-types';
 import styles from './button.module.css';
+
+
+function Button(props) {
+
+
+return (
+      <button onClick={props.handleClick} className={styles[props.buttonStyle]}>{props.name}</button>
+    );
+  }
+
+Button.propTypes = {
+    name: PropTypes.string,
+    buttonStyle: PropTypes.string,
+    handleClick: PropTypes.func
+  };
+
+  export default Button;
+
+
+ /* import PropTypes from 'prop-types';
+import styles from './button.module.css';
 import { useNavigate } from "react-router-dom";
 
 
@@ -22,4 +43,4 @@ Button.propTypes = {
     whereTo: PropTypes.string  
   };
 
-  export default Button;
+  export default Button;*/

@@ -1,11 +1,15 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Box from '../Components/Box/Box';
 import QuestionsAndMap from '../Components/QuestionsAndMap/QuestionsAndMap';
 import Button from '../Components/Button/Button';
 import '../Styles/index.css';
 import { getTodaysQuestions } from "../Classes/GetTodaysQuestions";
 
+
 const Game = () => {
+
+const navigate = useNavigate()
 
 const [selectedQuestion, setSelectedQuestion] = useState(0);
 const [questions, setQuestions] = useState();
@@ -21,7 +25,7 @@ useEffect(() => {
         <div className='background'>
 
         <div className="smallButtonWrapper">
-         <Button name="?" buttonStyle="smallButton" whereTo="/about"/>
+         <Button name="?" buttonStyle="smallButton" handleClick={()=>{navigate("/about")}} />
         </div>
 
           <div className="gameWrapper">
@@ -35,8 +39,7 @@ useEffect(() => {
 
             <div>
              <h2>Question {selectedQuestion + 1}</h2>
-             {questions == null ? "None" : questions[selectedQuestion].questionText}
-             <QuestionsAndMap />
+             <QuestionsAndMap questionDisplay={questions == null ? "None" : questions[selectedQuestion].questionText} />
             </div>
 
           </div>
@@ -46,5 +49,3 @@ useEffect(() => {
   };
   
   export default Game;
-
-  /*<QuestionsAndMap question="Foo?"/>*/

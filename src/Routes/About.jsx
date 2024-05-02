@@ -1,14 +1,18 @@
 import Button from '../Components/Button/Button';
 import "../Styles/index.css"
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+
+  const navigate = useNavigate()
+
     return (
       <div>
 
         <div className="background">
 
           <div className="smallButtonWrapper">
-          <Button name="X" buttonStyle="smallButton" whereTo="/game"/>
+          <Button name="X" buttonStyle="smallButton" handleClick={()=>{navigate("/game")}}/>
           </div>
 
           <div className="descriptionWrapper">
