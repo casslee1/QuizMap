@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, } from "react";
 import { useNavigate } from "react-router-dom";
 import Box from '../Components/Box/Box';
 import QuestionsAndMap from '../Components/QuestionsAndMap/QuestionsAndMap';
 import Button from '../Components/Button/Button';
 import '../Styles/index.css';
-import { getTodaysQuestions } from "../Classes/GetTodaysQuestions";
+/*import { getTodaysQuestions } from "../Classes/getTodaysQuestions";*/
+import { useTodaysQuestions } from "../Components/useTodaysQuestions";
 
 
 const Game = () => {
@@ -12,12 +13,11 @@ const Game = () => {
 const navigate = useNavigate()
 
 const [selectedQuestion, setSelectedQuestion] = useState(0);
-const [questions, setQuestions] = useState();
 
-useEffect(() => {
-    const questions = getTodaysQuestions();
-    setQuestions(questions);
-}, []);
+function CurrentQuestion() {
+  const questions = useTodaysQuestions();
+  return<p>{questions == null ? "None" : questions[selectedQuestion].questionText}</p>;
+}
 
     return (
       <div>
@@ -39,7 +39,7 @@ useEffect(() => {
 
             <div>
              <h2>Question {selectedQuestion + 1}</h2>
-             <QuestionsAndMap questionDisplay={questions == null ? "None" : questions[selectedQuestion].questionText} />
+             <QuestionsAndMap questionDisplay={CurrentQuestion()} />
             </div>
 
           </div>
@@ -49,3 +49,21 @@ useEffect(() => {
   };
   
   export default Game;
+
+
+  /*const [selectedQuestion, setSelectedQuestion] = useState(0);
+const [questions, setQuestions] = useState();
+
+useEffect(() => {
+    const questions = getTodaysQuestions();
+    setQuestions(questions);
+}, []);
+
+function useTodaysQuestions() {
+  let [questions, setQuestions] = useState();
+  questions = getTodaysQuestions();
+  setQuestions(questions);
+  return questions;
+} 
+
+questions == null ? "None" : questions[selectedQuestion].questionText*/

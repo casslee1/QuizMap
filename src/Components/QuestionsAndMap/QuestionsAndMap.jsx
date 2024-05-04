@@ -18,7 +18,7 @@ function QuestionsAndMap(props) {
 }
 
 QuestionsAndMap.propTypes = {
-    questionDisplay: PropTypes.string
+    questionDisplay: PropTypes.func
 }
 
 export default QuestionsAndMap;

@@ -9,6 +9,15 @@ export const getTodaysQuestions = () => {
   ];
 };
 
+/*export const getTodaysQuestions = () => {
+  return [
+    new Question("This is question number one"),
+    new Question("This is question number two"),
+    new Question("This is question number three"),
+    new Question("This is question number four"),
+  ];
+};
+
 const weekdays = [
   "Sunday",
   "Monday",
@@ -20,4 +29,4 @@ const weekdays = [
 ];
 const currentDate = new Date();
 const dayOfWeek = currentDate.getDay();
-const day = weekdays[dayOfWeek];
+const day = weekdays[dayOfWeek];*/
