@@ -1,24 +1,22 @@
 import Question from "./question";
+import data from "../../public/data.json";
 
 export const getTodaysQuestions = () => {
-  return [
-    new Question("This is question number one"),
-    new Question("This is question number two"),
-    new Question("This is question number three"),
-    new Question("This is question number four"),
-  ];
+  const questions = data.map(
+    (item) =>
+      new Question(
+        item.questionText,
+        item.answerText,
+        item.lat,
+        item.lon,
+        item.answerImage,
+        item.questionDay
+      )
+  );
+  return questions;
 };
 
-/*export const getTodaysQuestions = () => {
-  return [
-    new Question("This is question number one"),
-    new Question("This is question number two"),
-    new Question("This is question number three"),
-    new Question("This is question number four"),
-  ];
-};
-
-const weekdays = [
+/*const weekdays = [
   "Sunday",
   "Monday",
   "Tuesday",
