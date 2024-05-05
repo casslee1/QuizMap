@@ -1,7 +1,10 @@
 import Question from "./question";
-import data from "../../public/data.json";
+/*import data from "../../public/data.json";*/
 
-export const getTodaysQuestions = () => {
+export const getTodaysQuestions = async () => {
+  const response = await fetch("../../public/data.json");
+  const data = await response.json();
+
   const questions = data.map(
     (item) =>
       new Question(
@@ -15,6 +18,21 @@ export const getTodaysQuestions = () => {
   );
   return questions;
 };
+
+/*export const getTodaysQuestions = () => {
+  const questions = data.map(
+    (item) =>
+      new Question(
+        item.questionText,
+        item.answerText,
+        item.lat,
+        item.lon,
+        item.answerImage,
+        item.questionDay
+      )
+  );
+  return questions;
+};*/
 
 /*const weekdays = [
   "Sunday",
