@@ -1,7 +1,7 @@
 .playButton {
   background-color: #f5f3c1;
   border-radius: 12px;
-  border-color: #2f0f5d;
+  border-color: #001f54;
   font-size: 25px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -9,7 +9,7 @@
   padding-right: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #2f0f5d;
+  color: #001f54;
 }
 
 .smallButton {
