@@ -1,8 +1,8 @@
 .tenor-sans-regular {
   font-family: "Tenor Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 550;
   font-style: normal;
-  font-size: 60px;
+  font-size: 70px;
   color: #001f54;
 }
 
@@ -13,7 +13,7 @@ h2 {
 }
 
 .background {
-  background-color: #fdfdfd;
+  background-image: url("../Images/TopoBackground.png");
   position: absolute;
   width: 100%;
   height: 100%;
@@ -42,11 +42,11 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 25%;
+  padding-top: 20%;
 }
 
 .compassContainer {
-  padding-top: 10%;
+  padding-top: 0%;
 }
 
 .gameWrapper {
@@ -64,4 +64,12 @@ h2 {
 .smallButtonWrapper {
   display: flex;
   justify-content: flex-end;
+}
+
+img {
+  width: 125px;
+}
+
+.descriptionWrapper {
+  background-color: white;
 }

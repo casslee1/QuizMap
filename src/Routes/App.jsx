@@ -21,15 +21,17 @@ const App = () => {
         <h1 className="tenor-sans-regular">QuizMap</h1>
         </div>
         
+        <div className="compassContainer">
+          <img src={CompassRose} alt="Compass Rose"/>
+        </div>
+
         <Description descText="Welcome! Answer a series of trivia questions by finding the location of the answer on a map." />
       
         <div>
         <Button name="Play" buttonStyle="playButton" handleClick={()=>{navigate("game")}}/>
         </div>
 
-        <div className="compassContainer">
-          <img src={CompassRose} alt="Compass Rose"/>
-        </div>
+      
       </div>
 
     </div>
