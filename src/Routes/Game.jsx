@@ -1,7 +1,7 @@
 import { useState, } from "react";
 import { useNavigate } from "react-router-dom";
 import Box from '../Components/Box/Box';
-import QuestionsAndMap from '../Components/QuestionsAndMap/QuestionsAndMap';
+import QuestionAndMap from '../Components/QuestionsAndMap/QuestionAndMap';
 import Button from '../Components/Button/Button';
 import '../Styles/index.css';
 /*import { getTodaysQuestions } from "../Classes/getTodaysQuestions";*/
@@ -39,7 +39,7 @@ function CurrentQuestion() {
 
             <div>
              <h2>Question {selectedQuestion + 1}</h2>
-             <QuestionsAndMap questionDisplay={CurrentQuestion()} />
+             <QuestionAndMap questionDisplay={CurrentQuestion()} />
             </div>
 
           </div>

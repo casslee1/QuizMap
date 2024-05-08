@@ -1,7 +1,7 @@
-import styles from './questionsAndMap.module.css';
+import styles from './questionAndMap.module.css';
 import PropTypes from 'prop-types';
 
-function QuestionsAndMap(props) {
+function QuestionAndMap(props) {
 
   
       
@@ -17,9 +17,9 @@ function QuestionsAndMap(props) {
     
 }
 
-QuestionsAndMap.propTypes = {
+QuestionAndMap.propTypes = {
     questionDisplay: PropTypes.func
 }
 
-export default QuestionsAndMap;
+export default QuestionAndMap;
 
