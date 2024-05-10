@@ -2,7 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import Description from "../Components/Description/Description";
 import Button from "../Components/Button/Button";
-import CompassRose from "../Images/CompassRose.png";
+import CompassRose from "../SiteImages/CompassRose.png";
 import "../Styles/index.css"
 
 

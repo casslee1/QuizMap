@@ -1,7 +1,7 @@
 import Question from "./question";
 
 export const getTodaysQuestions = async () => {
-  const response = await fetch("../../public/data.json");
+  const response = await fetch("/data.json");
   const data = await response.json();
 
   const questions = data.map(
