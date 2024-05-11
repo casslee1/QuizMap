@@ -13,15 +13,15 @@
     "lat": "",
     "lon": "",
     "answerImage": "",
-    "questionDay": ""
+    "questionDay": "0"
     },
     {
-    "questionText": "This volcano is the highest peak in Japan",
+    "questionText": "This volcano is the tallest mountain in Japan",
     "answerText": "Mount Fuji",
     "lat": "",
     "lon": "",
     "answerImage": "",
-    "questionDay": ""
+    "questionDay": "0"
     },
     {
     "questionText": "The first person to go over this natural feature in a barrel was Annie Edson Taylor in 1901.",
@@ -29,7 +29,7 @@
     "lat": "",
     "lon": "",
     "answerImage": "",
-    "questionDay": ""
+    "questionDay": "0"
     },
     {
     "questionText": "This is the only one of the seven wonders of the ancient world that remains standing.",
@@ -37,8 +37,43 @@
     "lat": "",
     "lon": "",
     "answerImage": "",
-    "questionDay": ""
+    "questionDay": "0"
+    },
+    {
+    "questionText": "Test1",
+    "answerText": "Test1",
+    "lat": "",
+    "lon": "",
+    "answerImage": "",
+    "questionDay": "6"
+    },
+    {
+    "questionText": "2Test1",
+    "answerText": "2Test1",
+    "lat": "",
+    "lon": "",
+    "answerImage": "",
+    "questionDay": "6"
+    },
+    {
+    "questionText": "3Test1",
+    "answerText": "3Test1",
+    "lat": "",
+    "lon": "",
+    "answerImage": "",
+    "questionDay": "6"
+    },
+    {
+    "questionText": "4Test1",
+    "answerText": "4Test1",
+    "lat": "",
+    "lon": "",
+    "answerImage": "",
+    "questionDay": "6"
     }
+
 ]
+
+
 
 

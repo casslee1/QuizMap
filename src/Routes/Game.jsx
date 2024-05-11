@@ -1,23 +1,21 @@
 import { useState, } from "react";
 import { useNavigate } from "react-router-dom";
 import Box from '../Components/Box/Box';
-import QuestionAndMap from '../Components/QuestionsAndMap/QuestionAndMap';
+import QuestionAndMap from '../Components/QuestionAndMap/QuestionAndMap';
 import Button from '../Components/Button/Button';
 import '../Styles/index.css';
-/*import { getTodaysQuestions } from "../Classes/getTodaysQuestions";*/
 import { useTodaysQuestions } from "../Components/useTodaysQuestions";
 
 
 const Game = () => {
 
-const navigate = useNavigate()
+  const navigate = useNavigate()
 
-const [selectedQuestion, setSelectedQuestion] = useState(0);
+  const [selectedQuestion, setSelectedQuestion] = useState(0);
 
-function CurrentQuestion() {
   const questions = useTodaysQuestions();
-  return<p>{questions == null ? "None" : questions[selectedQuestion].questionText}</p>;
-}
+
+  const question = questions == null ? null : questions[selectedQuestion].questionText;
 
     return (
       <div>
@@ -39,7 +37,7 @@ function CurrentQuestion() {
 
             <div>
              <h2>Question {selectedQuestion + 1}</h2>
-             <QuestionAndMap questionDisplay={CurrentQuestion()} />
+             <QuestionAndMap questionDisplay={question} />
             </div>
 
           </div>

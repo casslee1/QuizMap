@@ -14,14 +14,3 @@ export function useTodaysQuestions() {
 
   return questions;
 }
-
-/*export function useTodaysQuestions() {
-  const [questions, setQuestions] = useState();
-
-  useEffect(() => {
-    const questions = getTodaysQuestions();
-    setQuestions(questions);
-  }, []);
-
-  return questions;
-}*/
