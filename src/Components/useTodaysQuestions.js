@@ -3,14 +3,23 @@ import { getTodaysQuestions } from "../Classes/getTodaysQuestions";
 
 export function useTodaysQuestions() {
   const [questions, setQuestions] = useState();
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
-      const questions = await getTodaysQuestions();
-      setQuestions(questions);
+      try {
+        setLoading(true);
+        const questions = await getTodaysQuestions();
+        setQuestions(questions);
+      } catch (error) {
+        setError(error);
+      } finally {
+        setLoading(false);
+      }
     }
     fetchData();
   }, []);
 
-  return questions;
+  return { questions, loading, error };
 }

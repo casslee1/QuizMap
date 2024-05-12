@@ -5,6 +5,7 @@ import QuestionAndMap from '../Components/QuestionAndMap/QuestionAndMap';
 import Button from '../Components/Button/Button';
 import '../Styles/index.css';
 import { useTodaysQuestions } from "../Components/useTodaysQuestions";
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 const Game = () => {
@@ -13,9 +14,18 @@ const Game = () => {
 
   const [selectedQuestion, setSelectedQuestion] = useState(0);
 
-  const questions = useTodaysQuestions();
+  const { questions, loading, error} = useTodaysQuestions();
 
   const question = questions == null ? null : questions[selectedQuestion].questionText;
+ 
+  if (loading) {
+    return <div><CircularProgress /></div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
 
     return (
       <div>
@@ -49,19 +59,3 @@ const Game = () => {
   export default Game;
 
 
-  /*const [selectedQuestion, setSelectedQuestion] = useState(0);
-const [questions, setQuestions] = useState();
-
-useEffect(() => {
-    const questions = getTodaysQuestions();
-    setQuestions(questions);
-}, []);
-
-function useTodaysQuestions() {
-  let [questions, setQuestions] = useState();
-  questions = getTodaysQuestions();
-  setQuestions(questions);
-  return questions;
-} 
-
-questions == null ? "None" : questions[selectedQuestion].questionText*/
