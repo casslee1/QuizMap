@@ -16,7 +16,7 @@ const Game = () => {
 
   const { questions, loading, error} = useTodaysQuestions();
 
-  const question = questions == null ? null : questions[selectedQuestion].questionText;
+  const question = questions == null ? null : questions[selectedQuestion];
  
   if (loading) {
     return <div><CircularProgress /></div>;
@@ -46,7 +46,7 @@ const Game = () => {
 
           <div>
             <h2>Question {selectedQuestion + 1}</h2>
-            <QuestionAndMap questionDisplay={question} />
+            <QuestionAndMap questionDisplay={question.questionText} answerDisplay={question.answerText} />
           </div>
 
         </div>

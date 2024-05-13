@@ -1,7 +1,7 @@
 import styles from './questionAndMap.module.css';
 import PropTypes from 'prop-types';
 import { useRef } from "react";
-import { MapContainer, TileLayer } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 
@@ -27,7 +27,13 @@ function QuestionAndMap(props) {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          {/* Additional map layers or components can be added here */}
+
+          <Marker position={[47.560539, -52.712830]}>
+            <Popup>
+              {props.answerDisplay}
+              This is a test popup.
+            </Popup>
+          </Marker>
         </MapContainer>
       </div>
      
@@ -37,7 +43,8 @@ function QuestionAndMap(props) {
 }
 
 QuestionAndMap.propTypes = {
-    questionDisplay: PropTypes.string
+    questionDisplay: PropTypes.string,
+    answerDisplay: PropTypes.string
 }
 
 export default QuestionAndMap;

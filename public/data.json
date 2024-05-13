@@ -1,6 +1,6 @@
 [
     {
-        "questionText": "When this tower opened in 1889 it was the tallest building in the world",
+        "questionText": "When this tower opened in 1889 it was the tallest building in the world.",
         "answerText": "The Eiffel Tower",
         "lat": "48.85847",
         "lon": "2.29452",
@@ -16,7 +16,7 @@
         "questionDay": "0"
     },
     {
-        "questionText": "This volcano is the tallest mountain in Japan",
+        "questionText": "This is the tallest mountain in Japan.",
         "answerText": "Mount Fuji",
         "lat": "",
         "lon": "",
@@ -32,24 +32,16 @@
         "questionDay": "0"
     },
     {
-        "questionText": "This is the only one of the seven wonders of the ancient world that remains standing.",
-        "answerText": "The Pyramid of Giza",
-        "lat": "",
-        "lon": "",
-        "answerImage": "",
-        "questionDay": "0"
-    },
-    {
-        "questionText": "Monday1",
-        "answerText": "",
+        "questionText": "This is the current home of the British Crown Jewels.",
+        "answerText": "The Tower of London",
         "lat": "",
         "lon": "",
         "answerImage": "",
         "questionDay": "1"
     },
     {
-        "questionText": "Monday2",
-        "answerText": "",
+        "questionText": "This is the only one of the seven wonders of the ancient world that remains standing.",
+        "answerText": "The Pyramid of Giza",
         "lat": "",
         "lon": "",
         "answerImage": "",
