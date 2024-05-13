@@ -23,11 +23,11 @@ function QuestionAndMap(props) {
           ref={mapRef}
           style={{height: "500px", width: "400px"}}
     >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        {/* Additional map layers or components can be added here */}
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          {/* Additional map layers or components can be added here */}
         </MapContainer>
       </div>
      
