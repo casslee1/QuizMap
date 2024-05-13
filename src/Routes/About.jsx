@@ -12,22 +12,22 @@ const About = () => {
         <div className="background">
 
           <div className="smallButtonWrapper">
-          <Button name="X" buttonStyle="smallButton" handleClick={()=>{navigate("/game")}}/>
+            <Button name="X" buttonStyle="smallButton" handleClick={()=>{navigate("/game")}}/>
           </div>
 
           <div className="descriptionWrapper">
-           <h2>How To Play</h2>
-           <p>This will be a description of how to play the game.</p>
-           <ul>
-            <li>Maybe part of the instructions</li>
-            <li>will be a list</li>
-           </ul>
+            <h2>How To Play</h2>
+            <p>This will be a description of how to play the game.</p>
+            <ul>
+              <li>Maybe part of the instructions</li>
+              <li>will be a list</li>
+            </ul>
           </div>
 
         </div>
 
       </div>
     );
-  };
+};
   
-  export default About;
+export default About;

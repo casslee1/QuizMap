@@ -12,19 +12,19 @@ const Results = () => {
 
         <div className='background'>
 
-        <div className="smallButtonWrapper">
-          <Button name="X" buttonStyle="smallButton" handleClick={()=>{navigate("/game")}}/>
-        </div>
+          <div className="smallButtonWrapper">
+            <Button name="X" buttonStyle="smallButton" handleClick={()=>{navigate("/game")}}/>
+          </div>
 
-        <div>
-          <h2>The Results</h2>
-          <p>say something about the results</p>
-        </div>
+          <div>
+            <h2>The Results</h2>
+            <p>say something about the results</p>
+          </div>
 
         </div>
 
       </div>
     );
-  };
+};
   
-  export default Results;
+export default Results;
