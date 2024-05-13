@@ -28,7 +28,7 @@ function QuestionAndMap(props) {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          <Marker position={[47.560539, -52.712830]}>
+          <Marker position={[props.latitude, props.longitude]}>
             <Popup>
               {props.answerDisplay}
               This is a test popup.
@@ -44,7 +44,9 @@ function QuestionAndMap(props) {
 
 QuestionAndMap.propTypes = {
     questionDisplay: PropTypes.string,
-    answerDisplay: PropTypes.string
+    answerDisplay: PropTypes.string,
+    latitude: PropTypes.number,
+    longitude: PropTypes.number
 }
 
 export default QuestionAndMap;

@@ -46,7 +46,7 @@ const Game = () => {
 
           <div>
             <h2>Question {selectedQuestion + 1}</h2>
-            <QuestionAndMap questionDisplay={question.questionText} answerDisplay={question.answerText} />
+            <QuestionAndMap questionDisplay={question.questionText} answerDisplay={question.answerText} latitude={question.lat} longitude={question.lon}/>
           </div>
 
         </div>
