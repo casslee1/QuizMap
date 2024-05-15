@@ -14,7 +14,7 @@ function QuestionAndMap(props) {
   return (
     <div>
 
-      <p>{props.questionDisplay}</p>
+      <p>{props.questionInfo.questionText}</p>
     
       <div className={styles.map}>
         <MapContainer
@@ -28,9 +28,9 @@ function QuestionAndMap(props) {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          <Marker position={[props.latitude, props.longitude]}>
+          <Marker position={[props.questionInfo.lat, props.questionInfo.lon]}>
             <Popup>
-              {props.answerDisplay}
+              {props.questionInfo.answerText}
               This is a test popup.
             </Popup>
           </Marker>
@@ -43,10 +43,7 @@ function QuestionAndMap(props) {
 }
 
 QuestionAndMap.propTypes = {
-    questionDisplay: PropTypes.string,
-    answerDisplay: PropTypes.string,
-    latitude: PropTypes.number,
-    longitude: PropTypes.number
+    questionInfo: PropTypes.object
 }
 
 export default QuestionAndMap;

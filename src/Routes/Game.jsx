@@ -4,7 +4,7 @@ import Box from '../Components/Box/Box';
 import QuestionAndMap from '../Components/QuestionAndMap/QuestionAndMap';
 import Button from '../Components/Button/Button';
 import '../Styles/index.css';
-import { useTodaysQuestions } from "../Components/useTodaysQuestions";
+import { useTodaysQuestions } from "../Hooks/useTodaysQuestions";
 import CircularProgress from '@mui/material/CircularProgress';
 
 
@@ -46,7 +46,7 @@ const Game = () => {
 
           <div>
             <h2>Question {selectedQuestion + 1}</h2>
-            <QuestionAndMap questionDisplay={question.questionText} answerDisplay={question.answerText} latitude={question.lat} longitude={question.lon}/>
+            <QuestionAndMap questionInfo={question}/>
           </div>
 
         </div>
