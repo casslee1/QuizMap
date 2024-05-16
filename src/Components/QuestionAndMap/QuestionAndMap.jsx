@@ -31,7 +31,6 @@ function QuestionAndMap(props) {
           <Marker position={[props.questionInfo.lat, props.questionInfo.lon]}>
             <Popup>
               {props.questionInfo.answerText}
-              This is a test popup.
             </Popup>
           </Marker>
         </MapContainer>
