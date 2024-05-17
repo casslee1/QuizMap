@@ -48,26 +48,26 @@
         "questionDay": "1"
     },
     {
-        "questionText": "Monday3",
-        "answerText": "",
-        "lat": 10,
-        "lon": 10,
+        "questionText": "This highly photographed and filmed bridge is painted a colour called International Orange and is named after the strait it crosses.",
+        "answerText": "The Golden Gate Bridge",
+        "lat": 37.82011427548004, 
+        "lon": -122.47860271921363,
         "answerImage": "",
         "questionDay": "1"
     },
     {
-        "questionText": "Monday4",
-        "answerText": "",
-        "lat": 10,
-        "lon": 10,
+        "questionText": "This is where you would have gone to watch gladiator battles approximately 1900 years ago.",
+        "answerText": "The Colosseum",
+        "lat": 41.89039379369444, 
+        "lon": 12.492220146971382,
         "answerImage": "",
         "questionDay": "1"
     },
     {
-        "questionText": "Tuesday1",
-        "answerText": "",
-        "lat": 10,
-        "lon": 10,
+        "questionText": "This is the highest mountain above sea level in the world.",
+        "answerText": "Mount Everest",
+        "lat": 27.988953479006923, 
+        "lon": 86.92480337091898,
         "answerImage": "",
         "questionDay": "2"
     },
