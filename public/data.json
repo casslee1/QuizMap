@@ -72,18 +72,18 @@
         "questionDay": "2"
     },
     {
-        "questionText": "Tuesday2",
-        "answerText": "",
-        "lat": 10,
-        "lon": 10,
+        "questionText": "This statue was France's gift to the American people on July 4, 1884.",
+        "answerText": "The Statue of Liberty",
+        "lat": 40.689493427293314, 
+        "lon": -74.0445111324914,
         "answerImage": "",
         "questionDay": "2"
     },
     {
-        "questionText": "Tuesday3",
-        "answerText": "",
-        "lat": 10,
-        "lon": 10,
+        "questionText": "What iconic performing arts venue, known for its distinctive sail-like design, was designed by Danish architect Jørn Utzon",
+        "answerText": "The Sidney Opera House",
+        "lat": -33.856597271920656, 
+        "lon": 151.21528596716473,
         "answerImage": "",
         "questionDay": "2"
     },
