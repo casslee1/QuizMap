@@ -26,6 +26,7 @@ const Game = () => {
     return <div>Error: {error.message}</div>;
   }
 
+
   return (
     <div>
 

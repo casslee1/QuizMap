@@ -112,18 +112,18 @@
         "questionDay": "3"
     },
     {
-        "questionText": "Wednesday3",
-        "answerText": "",
-        "lat": 10,
-        "lon": 10,
+        "questionText": "This is the home of the Mona Lisa.",
+        "answerText": "The Louvre",
+        "lat": 48.86078753170897, 
+        "lon": 2.3375796238072994,
         "answerImage": "",
-        "questionDay": "2"
+        "questionDay": "3"
     },
     {
-        "questionText": "Wednesday4",
-        "answerText": "",
-        "lat": 10,
-        "lon": 10,
+        "questionText": "What volcanic archipelago in the Pacific Ocean is famous for its unique species of flora and fauna, which played a significant role in Charles Darwin's theory of evolution by natural selection?",
+        "answerText": "The Galápagos Islands",
+        "lat": -0.19498311730231407, 
+        "lon": -90.43782591969467,
         "answerImage": "",
         "questionDay": "3"
     },
