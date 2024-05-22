@@ -88,26 +88,26 @@
         "questionDay": "2"
     },
     {
-        "questionText": "Tuesday4",
-        "answerText": "",
-        "lat": 10,
-        "lon": 10,
+        "questionText": "What ancient temple, located on the Acropolis of Athens, was dedicated to the goddess Athena and is considered one of the most important surviving buildings of Classical Greece?",
+        "answerText": "The Parthenon",
+        "lat": 37.973221002152286, 
+        "lon": 23.726349319935377,
         "answerImage": "",
         "questionDay": "2"
     },
     {
-        "questionText": "Wednesday1",
-        "answerText": "",
-        "lat": 10,
-        "lon": 10,
+        "questionText": "What renowned chapel is famous for its ceiling painted by Michelangelo and serves as the site of the papal conclave?",
+        "answerText": "The Sistine Chapel",
+        "lat": 41.903209363016025, 
+        "lon": 12.454335698942451,
         "answerImage": "",
         "questionDay": "3"
     },
     {
-        "questionText": "Wednesday2",
-        "answerText": "",
-        "lat": 10,
-        "lon": 10,
+        "questionText": "What prehistoric monument consists of a ring of standing stones and is believed to have been constructed around 3000 BC to 2000 BC?",
+        "answerText": "Stonehenge",
+        "lat": 51.17902993934085, 
+        "lon": -1.8262364607015955,
         "answerImage": "",
         "questionDay": "3"
     },
