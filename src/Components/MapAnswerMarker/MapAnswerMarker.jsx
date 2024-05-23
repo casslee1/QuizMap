@@ -1,16 +1,9 @@
 import PropTypes from 'prop-types';
-import { useState} from "react";
-import { Marker, Popup, useMapEvents} from "react-leaflet";
+import { Marker, Popup} from "react-leaflet";
+import { useCurrentZoomLevel } from '../../Hooks/useCurrentZoomLevel';
 
 function MapAnswerMarker(props){
-    const [zoom, setZoom] = useState(null);
-  
-    const zoomLevel = useMapEvents({
-      zoomend(){
-        setZoom(zoomLevel.getZoom());
-        console.log("Zoom is " + zoomLevel.getZoom());
-      },
-    })
+   const zoom = useCurrentZoomLevel();
   
     return zoom >= 4 ? ( <Marker position={[props.currentLat, props.currentLon]}><Popup>{props.currentAnswer}</Popup></Marker>) : null;
   
@@ -23,5 +16,4 @@ function MapAnswerMarker(props){
   }
   
   export default MapAnswerMarker;
-
 

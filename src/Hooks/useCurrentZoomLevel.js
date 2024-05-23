@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useMapEvents } from "react-leaflet";
 
 export function useCurrentZoomLevel() {
   const [zoom, setZoom] = useState(null);
@@ -9,30 +10,6 @@ export function useCurrentZoomLevel() {
       console.log("Zoom is " + zoomLevel.getZoom());
     },
   });
+
+  return zoom;
 }
-
-/*import { useState, useEffect } from "react";
-import { getTodaysQuestions } from "../Classes/getTodaysQuestions";
-
-export function useTodaysQuestions() {
-  const [questions, setQuestions] = useState();
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        setLoading(true);
-        const questions = await getTodaysQuestions();
-        setQuestions(questions);
-      } catch (error) {
-        setError(error);
-      } finally {
-        setLoading(false);
-      }
-    }
-    fetchData();
-  }, []);
-
-  return { questions, loading, error };
-}*/
