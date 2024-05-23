@@ -25,32 +25,3 @@ function MapAnswerMarker(props){
   export default MapAnswerMarker;
 
 
-  /*import PropTypes from 'prop-types';
-import { useState} from "react";
-import { Marker, Popup, useMapEvents} from "react-leaflet";
-
-function MapAnswerMarker(props){
-    const [zoom, setZoom] = useState(null);
-  
-    const zoomLevel = useMapEvents({
-      zoomend(){
-        setZoom(zoomLevel.getZoom());
-        console.log("Zoom is " + zoomLevel.getZoom());
-      },
-    })
-     
-  
-  return zoom >= 4 ? ( <Marker position={[51.50825260251752, -0.07601367591891797]}>
-      <Popup>
-        {props.currentAnswer}
-      </Popup>
-    </Marker>) : null;
-
-      MapAnswerMarker.propTypes = {
-    currentLat: PropTypes.number,
-    currentLon: PropTypes.number, 
-    currentAnswer: PropTypes.string
-
-  }
-  
-  */
