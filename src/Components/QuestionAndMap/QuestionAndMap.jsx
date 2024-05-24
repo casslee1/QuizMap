@@ -29,7 +29,7 @@ function QuestionAndMap(props) {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          <MapAnswerMarker currentLat={props.questionInfo.lat} currentLon={props.questionInfo.lon} currentAnswer={props.questionInfo.answerText} />
+          <MapAnswerMarker answerInfo={props.questionInfo} />
 
         </MapContainer>
 
@@ -45,7 +45,6 @@ QuestionAndMap.propTypes = {
 }
 
 export default QuestionAndMap;
-
 
 
 
