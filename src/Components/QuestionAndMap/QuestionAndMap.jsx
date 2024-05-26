@@ -29,7 +29,7 @@ function QuestionAndMap(props) {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          <MapAnswerMarker answerInfo={props.questionInfo} />
+          <MapAnswerMarker answerInfo={props.questionInfo} onAnswerClick={props.onAnswerClick}/>
 
         </MapContainer>
 
@@ -41,7 +41,8 @@ function QuestionAndMap(props) {
 }
 
 QuestionAndMap.propTypes = {
-    questionInfo: PropTypes.object
+    questionInfo: PropTypes.object,
+    onAnswerClick: PropTypes.func
 }
 
 export default QuestionAndMap;

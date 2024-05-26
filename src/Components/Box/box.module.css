@@ -1,4 +1,18 @@
-.boxes {
+.box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.answered {
+  background-color: green;
+}
+
+/*.boxes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,4 +33,4 @@
   border-width: 4px;
   width: 100px;
   height: 100px;
-}
+}*/
