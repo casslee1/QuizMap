@@ -1,6 +1,6 @@
 import styles from './questionAndMap.module.css';
 import PropTypes from 'prop-types';
-import { useRef} from "react";
+import { useRef, useEffect} from "react";
 import { MapContainer, TileLayer} from "react-leaflet";
 import MapAnswerMarker from "../MapAnswerMarker/MapAnswerMarker";
 import "leaflet/dist/leaflet.css";
@@ -10,6 +10,13 @@ function QuestionAndMap(props) {
   const mapRef = useRef(null);
   const latitude = 51.505;
   const longitude = -0.09;
+
+
+  useEffect(() => {
+    if(mapRef.current){
+      mapRef.current.setZoom(0)
+    }
+  }, [props.questionInfo]);
 
   return (
     <div>
