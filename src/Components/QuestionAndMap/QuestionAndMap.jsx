@@ -10,8 +10,7 @@ function QuestionAndMap(props) {
   const mapRef = useRef(null);
   const latitude = 51.505;
   const longitude = -0.09;
-  
-  
+
   return (
     <div>
 
@@ -22,8 +21,8 @@ function QuestionAndMap(props) {
           center={[latitude, longitude]}
           zoom={0}
           ref={mapRef}
-          style={{height: "500px", width: "400px"}}
-    >
+          style={{height: "500px", width: "400px"}}>
+         
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
