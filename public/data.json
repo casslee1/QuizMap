@@ -4,7 +4,7 @@
         "answerText": "The Eiffel Tower",
         "lat": 48.85847,
         "lon": 2.29452,
-        "answerImage": "",
+        "answerImage": "../Images/EiffelTower.png",
         "questionDay": "0"
     },
     {

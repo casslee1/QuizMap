@@ -22,3 +22,14 @@
   font-weight: 400;
   color: #f5f3c1;
 }
+
+.giveUpButton {
+  background-color: #bee9e8;
+  color: #001f54;
+  border-radius: 12px;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

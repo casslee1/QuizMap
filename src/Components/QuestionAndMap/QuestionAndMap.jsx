@@ -7,7 +7,7 @@ import "leaflet/dist/leaflet.css";
 
 
 function QuestionAndMap(props) {
- const mapRef = useRef(null);
+  const mapRef = useRef(null);
   const latitude = 51.505;
   const longitude = -0.09;
   
