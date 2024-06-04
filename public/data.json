@@ -12,7 +12,7 @@
         "answerText": "The CN Tower",
         "lat": 43.6428379111431, 
         "lon": -79.3871426340785,
-        "answerImage": "",
+        "answerImage": "../Images/CNTower.png",
         "questionDay": "0"
     },
     {
@@ -20,7 +20,7 @@
         "answerText": "Mount Fuji",
         "lat": 35.361639513275634, 
         "lon": 138.72740625302058,
-        "answerImage": "",
+        "answerImage": "../Images/MountFuji.png",
         "questionDay": "0"
     },
     {
@@ -28,7 +28,7 @@
         "answerText": "Niagara Falls",
         "lat": 43.07812024380522, 
         "lon": -79.07557774783723,
-        "answerImage": "",
+        "answerImage": "../Images/NiagaraFalls.png",
         "questionDay": "0"
     },
     {
