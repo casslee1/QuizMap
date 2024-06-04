@@ -36,7 +36,7 @@
         "answerText": "The Tower of London",
         "lat": 51.50825260251752, 
         "lon": -0.07601367591891797,
-        "answerImage": "",
+        "answerImage": "../Images/TowerOfLondon.png",
         "questionDay": "1"
     },
     {
@@ -44,7 +44,7 @@
         "answerText": "The Pyramid of Giza",
         "lat": 29.979384723484486, 
         "lon": 31.134191286737455,
-        "answerImage": "",
+        "answerImage": "../Images/PyramidOfGiza.png",
         "questionDay": "1"
     },
     {
@@ -52,7 +52,7 @@
         "answerText": "The Golden Gate Bridge",
         "lat": 37.82011427548004, 
         "lon": -122.47860271921363,
-        "answerImage": "",
+        "answerImage": "../Images/GoldenGateBridge.png",
         "questionDay": "1"
     },
     {
