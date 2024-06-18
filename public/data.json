@@ -68,7 +68,7 @@
         "answerText": "Mount Everest",
         "lat": 27.988953479006923, 
         "lon": 86.92480337091898,
-        "answerImage": "",
+        "answerImage": "../Images/EiffelTower.png",
         "questionDay": "2"
     },
     {
@@ -76,7 +76,7 @@
         "answerText": "The Statue of Liberty",
         "lat": 40.689493427293314, 
         "lon": -74.0445111324914,
-        "answerImage": "",
+        "answerImage": "../Images/EiffelTower.png",
         "questionDay": "2"
     },
     {
@@ -84,15 +84,15 @@
         "answerText": "The Sidney Opera House",
         "lat": -33.856597271920656, 
         "lon": 151.21528596716473,
-        "answerImage": "",
+        "answerImage": "../Images/EiffelTower.png",
         "questionDay": "2"
     },
     {
-        "questionText": "What ancient temple, located on the Acropolis of Athens, was dedicated to the goddess Athena and is considered one of the most important surviving buildings of Classical Greece?",
+        "questionText": "What ancient temple was dedicated to the goddess Athena and is considered one of the most important surviving buildings of Classical Greece?",
         "answerText": "The Parthenon",
         "lat": 37.973221002152286, 
         "lon": 23.726349319935377,
-        "answerImage": "",
+        "answerImage": "../Images/EiffelTower.png",
         "questionDay": "2"
     },
     {
