@@ -24,7 +24,7 @@ Box.propTypes = {
   boxNum: PropTypes.number,
   isAnswered: PropTypes.bool,
   gaveUp: PropTypes.bool,
-  boxImage: PropTypes.text
+  boxImage: PropTypes.string
 };
 
 Box.defaultProps = {

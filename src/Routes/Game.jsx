@@ -53,9 +53,9 @@ const Game = () => {
         <div className="gameWrapper">
 
           <div className="boxWrapper">
-             {questions.map((_, index) => (
+             {questions.map((q, index) => (
               <div key={index} onClick={() => setSelectedQuestion(index)} >
-                <Box boxNum={index + 1}  isAnswered={answeredQuestion.includes(index)} gaveUp={givenUpQuestion.includes(index)} boxImage={question.answerImage}/>
+                <Box boxNum={index + 1}  isAnswered={answeredQuestion.includes(index)} gaveUp={givenUpQuestion.includes(index)} boxImage={q.answerImage}/>
               </div>
             ))}
           </div>
