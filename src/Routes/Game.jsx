@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Box from '../Components/Box/Box';
 import QuestionAndMap from '../Components/QuestionAndMap/QuestionAndMap';
 import Button from '../Components/Button/Button';
+import Results from '../Components/Results/Results';
 import '../Styles/index.css';
 import { useTodaysQuestions } from "../Hooks/useTodaysQuestions";
 import CircularProgress from '@mui/material/CircularProgress';
@@ -49,6 +50,8 @@ const Game = () => {
         <div className="smallButtonWrapper">
           <Button name="?" buttonStyle="smallButton" handleClick={()=>{navigate("/about")}} />
         </div>
+
+        <Results />
 
         <div className="gameWrapper">
 

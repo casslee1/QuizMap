@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from './Routes/App';
 import Game from './Routes/Game';
 import About from './Routes/About';
-import Results from './Routes/Results';
 import './Styles/index.css';
 
 const router = createBrowserRouter([
@@ -19,10 +18,6 @@ const router = createBrowserRouter([
   {
     path: "about",
     element: <About />,
-  },
-  {
-    path: "results",
-    element: <Results />,
   },
 ]);
 

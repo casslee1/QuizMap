@@ -14,10 +14,15 @@
 }
 
 .giveup {
-  border: 4px solid red;
+  filter: grayscale(100%);
 }
 
 img {
   height: 100%;
   width: 100%;
+}
+
+.selected {
+  border-width: 5px;
+  border-color: yellow;
 }

@@ -5,6 +5,7 @@ const Box = ({boxNum, isAnswered, gaveUp, boxImage}) => {
 
   let className = styles.box;
   let boxContent = boxNum;
+
   if (isAnswered){
     className += ` ${styles.answered}`;
     boxContent = <img src={boxImage}></img>;
