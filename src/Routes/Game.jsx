@@ -1,5 +1,4 @@
 import { useState, } from "react";
-import { useNavigate } from "react-router-dom";
 import Box from '../Components/Box/Box';
 import QuestionAndMap from '../Components/QuestionAndMap/QuestionAndMap';
 import Button from '../Components/Button/Button';
@@ -10,8 +9,6 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 
 const Game = () => {
-
-  const navigate = useNavigate()
 
   const [selectedQuestion, setSelectedQuestion] = useState(0);
   const [answeredQuestion, setAnsweredQuestion] = useState([]);
@@ -47,10 +44,6 @@ const Game = () => {
 
       <div className='background'>
 
-        <div className="smallButtonWrapper">
-          <Button name="?" buttonStyle="smallButton" handleClick={()=>{navigate("/about")}} />
-        </div>
-
         <Results />
 
         <div className="gameWrapper">
@@ -65,7 +58,7 @@ const Game = () => {
 
           <div>
             <h2>Question {selectedQuestion + 1}</h2>
-            <QuestionAndMap questionInfo={question} onAnswerClick={() => handleAnswerClick(selectedQuestion)}/>
+            <QuestionAndMap questionInfo={question} onAnswerClick={() => handleAnswerClick(selectedQuestion)} gaveUp={givenUpQuestion}/>
           </div>
 
           <div>

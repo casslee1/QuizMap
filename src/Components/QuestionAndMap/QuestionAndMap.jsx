@@ -18,6 +18,12 @@ function QuestionAndMap(props) {
     }
   }, [props.questionInfo]);
 
+  useEffect(() => {
+    if(){
+      
+    }
+  }, [props.gaveUp]);
+
   return (
     <div>
 
@@ -48,7 +54,8 @@ function QuestionAndMap(props) {
 
 QuestionAndMap.propTypes = {
     questionInfo: PropTypes.object,
-    onAnswerClick: PropTypes.func
+    onAnswerClick: PropTypes.func,
+    gaveUp: PropTypes.bool,
 }
 
 export default QuestionAndMap;
