@@ -58,7 +58,7 @@ const Game = () => {
 
           <div>
             <h2>Question {selectedQuestion + 1}</h2>
-            <QuestionAndMap questionInfo={question} onAnswerClick={() => handleAnswerClick(selectedQuestion)} gaveUp={givenUpQuestion}/>
+            <QuestionAndMap questionInfo={question} onAnswerClick={() => handleAnswerClick(selectedQuestion)}  givenUp={givenUpQuestion.includes(selectedQuestion)}/>
           </div>
 
           <div>

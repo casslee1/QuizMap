@@ -10,7 +10,7 @@ function QuestionAndMap(props) {
   const mapRef = useRef(null);
   const latitude = 51.505;
   const longitude = -0.09;
-
+  
 
   useEffect(() => {
     if(mapRef.current){
@@ -19,10 +19,10 @@ function QuestionAndMap(props) {
   }, [props.questionInfo]);
 
   useEffect(() => {
-    if(){
-      
+    if (props.givenUp === true) {
+      mapRef.current.flyTo([props.questionInfo.lat, props.questionInfo.lon], 13);
     }
-  }, [props.gaveUp]);
+  }, [props.givenUp, props.questionInfo, mapRef]);
 
   return (
     <div>
@@ -31,6 +31,7 @@ function QuestionAndMap(props) {
     
       <div className={styles.map}>
         <MapContainer
+        
           center={[latitude, longitude]}
           zoom={0}
           ref={mapRef}
@@ -55,7 +56,7 @@ function QuestionAndMap(props) {
 QuestionAndMap.propTypes = {
     questionInfo: PropTypes.object,
     onAnswerClick: PropTypes.func,
-    gaveUp: PropTypes.bool,
+    givenUp: PropTypes.bool
 }
 
 export default QuestionAndMap;
