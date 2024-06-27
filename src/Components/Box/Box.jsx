@@ -1,7 +1,7 @@
 import styles from './box.module.css';
 import PropTypes from 'prop-types';
 
-const Box = ({boxNum, isAnswered, gaveUp, boxImage}) => {
+const Box = ({boxNum, isAnswered, gaveUp, boxImage, currentBox}) => {
 
   let className = styles.box;
   let boxContent = boxNum;
@@ -14,6 +14,9 @@ const Box = ({boxNum, isAnswered, gaveUp, boxImage}) => {
     className += ` ${styles.giveup}`;
     boxContent = <img src={boxImage}></img>;
   }
+  else if (currentBox === boxNum){
+    className += ` ${styles.selected}`;
+  }
   
   return (
     <div className={className}>{boxContent}</div>
@@ -25,7 +28,8 @@ Box.propTypes = {
   boxNum: PropTypes.number,
   isAnswered: PropTypes.bool,
   gaveUp: PropTypes.bool,
-  boxImage: PropTypes.string
+  boxImage: PropTypes.string,
+  currentBox: PropTypes.number
 };
 
 Box.defaultProps = {
