@@ -18,7 +18,7 @@ function MapAnswerMarker(props){
 
 MapAnswerMarker.propTypes = {
   answerInfo: PropTypes.object,
-  onAnswerClick: PropTypes.func
+  onAnswerClick: PropTypes.func,
 }
   
 export default MapAnswerMarker;

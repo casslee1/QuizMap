@@ -8,9 +8,10 @@ import "leaflet/dist/leaflet.css";
 
 function QuestionAndMap(props) {
   const mapRef = useRef(null);
+  const markerRef = useRef(null);
   const latitude = 51.505;
   const longitude = -0.09;
-  
+
 
   useEffect(() => {
     if(mapRef.current){
@@ -20,9 +21,10 @@ function QuestionAndMap(props) {
 
   useEffect(() => {
     if (props.givenUp === true) {
-      mapRef.current.flyTo([props.questionInfo.lat, props.questionInfo.lon], 13);
+      mapRef.current.flyTo([props.questionInfo.lat, props.questionInfo.lon], 13,),
+      markerRef.current.openPopup()
     }
-  }, [props.givenUp, props.questionInfo, mapRef]);
+  }, [props.givenUp, props.questionInfo, mapRef, markerRef]);
 
   return (
     <div>
@@ -42,7 +44,7 @@ function QuestionAndMap(props) {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          <MapAnswerMarker answerInfo={props.questionInfo} onAnswerClick={props.onAnswerClick}/>
+          <MapAnswerMarker answerInfo={props.questionInfo} onAnswerClick={props.onAnswerClick} ref={markerRef}/>
 
         </MapContainer>
 
