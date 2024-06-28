@@ -8,7 +8,7 @@ function MapAnswerMarker(props){
   const zoom = useCurrentZoomLevel();
   
   return zoom >= 4 ? 
-    (<Marker position={[props.answerInfo.lat, props.answerInfo.lon]}>
+    (<Marker position={[props.answerInfo.lat, props.answerInfo.lon]}  ref={props.markerRef}>
       <Popup className={styles.mapPopup}>
         <Button name={props.answerInfo.answerText} buttonStyle="playButton" handleClick={()=>props.onAnswerClick()}/>
       </Popup>
@@ -19,6 +19,7 @@ function MapAnswerMarker(props){
 MapAnswerMarker.propTypes = {
   answerInfo: PropTypes.object,
   onAnswerClick: PropTypes.func,
+  markerRef: PropTypes.object
 }
   
 export default MapAnswerMarker;

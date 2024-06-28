@@ -21,8 +21,10 @@ function QuestionAndMap(props) {
 
   useEffect(() => {
     if (props.givenUp === true) {
-      mapRef.current.flyTo([props.questionInfo.lat, props.questionInfo.lon], 13,),
-      markerRef.current.openPopup()
+      mapRef.current.flyTo([props.questionInfo.lat, props.questionInfo.lon], 13,);
+      if (markerRef.current) {
+        markerRef.current.openPopup();
+      }
     }
   }, [props.givenUp, props.questionInfo, mapRef, markerRef]);
 
@@ -44,7 +46,7 @@ function QuestionAndMap(props) {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          <MapAnswerMarker answerInfo={props.questionInfo} onAnswerClick={props.onAnswerClick} ref={markerRef}/>
+          <MapAnswerMarker answerInfo={props.questionInfo} onAnswerClick={props.onAnswerClick} markerRef={markerRef} />
 
         </MapContainer>
 
