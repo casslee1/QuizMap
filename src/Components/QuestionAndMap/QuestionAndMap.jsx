@@ -21,10 +21,13 @@ function QuestionAndMap(props) {
 
   useEffect(() => {
     if (props.givenUp === true) {
-      mapRef.current.flyTo([props.questionInfo.lat, props.questionInfo.lon], 13,);
-      if (markerRef.current) {
+      mapRef.current.flyTo([props.questionInfo.lat, props.questionInfo.lon], 13, {
+        animate: true,
+        duration: 2
+      });
+      setTimeout(() => {
         markerRef.current.openPopup();
-      }
+      }, 2500); 
     }
   }, [props.givenUp, props.questionInfo, mapRef, markerRef]);
 
