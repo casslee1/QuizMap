@@ -20,7 +20,7 @@ function QuestionAndMap(props) {
   }, [props.questionInfo]);
 
   useEffect(() => {
-    if (props.givenUp === true) {
+    if (props.givenUp === true || props.answered === true) {
       mapRef.current.flyTo([props.questionInfo.lat, props.questionInfo.lon], 13, {
         animate: true,
         duration: 2
@@ -29,7 +29,7 @@ function QuestionAndMap(props) {
         markerRef.current.openPopup();
       }, 2500); 
     }
-  }, [props.givenUp, props.questionInfo, mapRef, markerRef]);
+  }, [props.givenUp, props.answered, props.questionInfo, mapRef, markerRef]);
 
   return (
     <div>
@@ -63,7 +63,8 @@ function QuestionAndMap(props) {
 QuestionAndMap.propTypes = {
     questionInfo: PropTypes.object,
     onAnswerClick: PropTypes.func,
-    givenUp: PropTypes.bool
+    givenUp: PropTypes.bool,
+    answered: PropTypes.bool
 }
 
 export default QuestionAndMap;
