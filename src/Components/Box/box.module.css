@@ -8,6 +8,7 @@
   cursor: pointer;
   font-size: 3em;
   background-color: white;
+  box-sizing: border-box;
 }
 
 .answered {
