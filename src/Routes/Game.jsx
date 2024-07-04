@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState, useEffect } from "react";
 import Box from '../Components/Box/Box';
 import QuestionAndMap from '../Components/QuestionAndMap/QuestionAndMap';
 import Button from '../Components/Button/Button';
@@ -7,29 +7,25 @@ import '../Styles/index.css';
 import { useTodaysQuestions } from "../Hooks/useTodaysQuestions";
 import CircularProgress from '@mui/material/CircularProgress';
 
-let correctQuestions = 0
-
 const Game = () => {
 
   const [selectedQuestion, setSelectedQuestion] = useState(0);
   const [answeredQuestion, setAnsweredQuestion] = useState([]);
   const [givenUpQuestion, setGivenUpQuestion] = useState([]);
+  const [finished, setFinished] = useState(false);
 
-  const { questions, loading, error} = useTodaysQuestions();
+  const {questions, loading, error} = useTodaysQuestions();
 
   const question = questions == null ? null : questions[selectedQuestion];
 
-  
   const handleAnswerClick = (index) => {
-    if (!givenUpQuestion.includes(index)){
+    if (!givenUpQuestion.includes(index) && !answeredQuestion.includes(index)){
       setAnsweredQuestion([...answeredQuestion, index]);
-      correctQuestions = correctQuestions + 1;
-      console.log("You have answered " + correctQuestions + " questions corrrectly.");
     }
   };
 
   const handleGiveUpClick = (index) => {
-    if (!answeredQuestion.includes(index)){
+    if (!answeredQuestion.includes(index) && !givenUpQuestion.includes(index)){
       setGivenUpQuestion([...givenUpQuestion, index]);
     }
   };
