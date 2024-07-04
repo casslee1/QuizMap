@@ -12,10 +12,14 @@
 }
 
 .answered {
-  border: 2px solid green;
+  border: 3px solid green;
 }
 
 .giveup {
+  border: 3px solid red;
+}
+
+.giveup img {
   filter: grayscale(100%);
 }
 
@@ -25,6 +29,5 @@ img {
 }
 
 .selected {
-  border-width: 5px;
-  border-color: yellow;
+  border: 3px solid yellow;
 }
