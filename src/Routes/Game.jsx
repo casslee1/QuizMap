@@ -1,4 +1,4 @@
-import { useState, } from "react";
+import { useState} from "react";
 import Box from '../Components/Box/Box';
 import QuestionAndMap from '../Components/QuestionAndMap/QuestionAndMap';
 import Button from '../Components/Button/Button';
@@ -7,6 +7,7 @@ import '../Styles/index.css';
 import { useTodaysQuestions } from "../Hooks/useTodaysQuestions";
 import CircularProgress from '@mui/material/CircularProgress';
 
+let correctQuestions = 0
 
 const Game = () => {
 
@@ -18,9 +19,12 @@ const Game = () => {
 
   const question = questions == null ? null : questions[selectedQuestion];
 
+  
   const handleAnswerClick = (index) => {
     if (!givenUpQuestion.includes(index)){
       setAnsweredQuestion([...answeredQuestion, index]);
+      correctQuestions = correctQuestions + 1;
+      console.log("You have answered " + correctQuestions + " questions corrrectly.");
     }
   };
 
@@ -30,6 +34,7 @@ const Game = () => {
     }
   };
  
+
   if (loading) {
     return <div><CircularProgress /></div>;
   }
