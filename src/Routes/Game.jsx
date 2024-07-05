@@ -29,7 +29,18 @@ const Game = () => {
       setGivenUpQuestion([...givenUpQuestion, index]);
     }
   };
- 
+
+  useEffect(() => {
+    if (answeredQuestion.length + givenUpQuestion.length === 4) {
+      setFinished(true);   
+      }
+  }, [answeredQuestion, givenUpQuestion]);
+
+  useEffect(() => {
+    if (finished === true) {
+      console.log("You are finished")  
+      }
+  }, [finished]);
 
   if (loading) {
     return <div><CircularProgress /></div>;
