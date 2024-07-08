@@ -14,6 +14,14 @@ const Game = () => {
   const [answeredQuestion, setAnsweredQuestion] = useState([]);
   const [givenUpQuestion, setGivenUpQuestion] = useState([]);
   const [finished, setFinished] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+  /*const handleClose = () => {
+    setOpen(false);
+  };*/
 
   const {questions, loading, error} = useTodaysQuestions();
 
@@ -47,6 +55,7 @@ const Game = () => {
       }
   }, [finished, saveResults, answeredQuestion]);
 
+
   if (loading) {
     return <div><CircularProgress /></div>;
   }
@@ -56,12 +65,16 @@ const Game = () => {
   }
 
 
+
   return (
     <div>
 
       <div className='background'>
 
-        <Results />
+      <div>
+        <Button name="Stats" buttonStyle="smallButton" handleClick={handleClickOpen}/>
+          {open && <Results />}
+      </div> 
 
         <div className="gameWrapper">
 
