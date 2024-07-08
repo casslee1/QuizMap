@@ -6,6 +6,7 @@ import Results from '../Components/Results/Results';
 import '../Styles/index.css';
 import { useTodaysQuestions } from "../Hooks/useTodaysQuestions";
 import CircularProgress from '@mui/material/CircularProgress';
+import useResults from "../Hooks/useResults";
 
 const Game = () => {
 
@@ -17,6 +18,8 @@ const Game = () => {
   const {questions, loading, error} = useTodaysQuestions();
 
   const question = questions == null ? null : questions[selectedQuestion];
+
+  const {saveResults} = useResults();
 
   const handleAnswerClick = (index) => {
     if (!givenUpQuestion.includes(index) && !answeredQuestion.includes(index)){
@@ -38,9 +41,11 @@ const Game = () => {
 
   useEffect(() => {
     if (finished === true) {
-      console.log("You are finished")  
+      console.log("You are finished");  
+      const todaysScore = answeredQuestion.length;
+      saveResults(todaysScore); 
       }
-  }, [finished]);
+  }, [finished, saveResults, answeredQuestion]);
 
   if (loading) {
     return <div><CircularProgress /></div>;
