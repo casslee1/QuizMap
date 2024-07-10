@@ -51,7 +51,8 @@ const Game = () => {
     if (finished === true) {
       console.log("You are finished");  
       const todaysScore = answeredQuestion.length;
-      saveResults(todaysScore); 
+      saveResults(todaysScore);
+      setOpen(true); 
       }
   }, [finished, saveResults, answeredQuestion]);
 
@@ -73,7 +74,7 @@ const Game = () => {
 
       <div>
         <Button name="Stats" buttonStyle="smallButton" handleClick={handleClickOpen}/>
-          {open && <Results />}
+          {open && <Results/> }
       </div> 
 
         <div className="gameWrapper">
