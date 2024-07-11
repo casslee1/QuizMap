@@ -7,6 +7,7 @@ import DialogContent from '@mui/material/DialogContent';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
+import PropTypes from 'prop-types';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -17,30 +18,29 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 
-export default function CustomizedDialogs() {
-   const [open, setOpen] = React.useState(true);
+CustomizedDialogs.propTypes = {
+  handleClose: PropTypes.func,
+  open: PropTypes.bool
+}
 
-    /*const handleClickOpen = () => {
-    setOpen(true);
-  };*/
-  const handleClose = () => {
-    setOpen(false);
-  };
+
+export default function CustomizedDialogs(props) {
+
 
   return (
     <React.Fragment>
       
       <BootstrapDialog
-        onClose={handleClose}
+        onClose={props.handleClose}
         aria-labelledby="customized-dialog-title"
-        open={open}
+        open={props.open}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
           Game Statistics
         </DialogTitle>
         <IconButton
           aria-label="close"
-          onClick={handleClose}
+          onClick={props.handleClose}
           sx={{
             position: 'absolute',
             right: 8,
@@ -66,7 +66,3 @@ export default function CustomizedDialogs() {
   );
 }
 
-
-/*<Button variant="outlined" onClick={handleClickOpen}>
-        Stats
-      </Button>*/

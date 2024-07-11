@@ -14,14 +14,14 @@ const Game = () => {
   const [answeredQuestion, setAnsweredQuestion] = useState([]);
   const [givenUpQuestion, setGivenUpQuestion] = useState([]);
   const [finished, setFinished] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [resultsDialogOpen, setResultsDialogOpen] = useState(false);
 
   const handleClickOpen = () => {
-    setOpen(true);
+    setResultsDialogOpen(true);
   };
-  /*const handleClose = () => {
-    setOpen(false);
-  };*/
+  const handleClose = () => {
+    setResultsDialogOpen(false);
+  };
 
   const {questions, loading, error} = useTodaysQuestions();
 
@@ -52,7 +52,7 @@ const Game = () => {
       console.log("You are finished");  
       const todaysScore = answeredQuestion.length;
       saveResults(todaysScore);
-      setOpen(true); 
+      setResultsDialogOpen(true); 
       }
   }, [finished, saveResults, answeredQuestion]);
 
@@ -74,7 +74,7 @@ const Game = () => {
 
       <div>
         <Button name="Stats" buttonStyle="smallButton" handleClick={handleClickOpen}/>
-          {open && <Results/> }
+          {<Results open={resultsDialogOpen} handleClose={handleClose}/> }
       </div> 
 
         <div className="gameWrapper">
