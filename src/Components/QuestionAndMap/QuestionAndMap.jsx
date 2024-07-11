@@ -21,17 +21,16 @@ function QuestionAndMap(props) {
 
   useEffect(() => {
     if (props.givenUp === true || props.answered === true) {
-      mapRef.current.flyTo([props.questionInfo.lat, props.questionInfo.lon], 13, {
-        animate: true,
-        duration: 2
+      mapRef.current.flyTo([props.questionInfo.lat, props.questionInfo.lon], 13);
+      mapRef.current.once('zoomend', () => {
+        if (markerRef.current) {
+          markerRef.current.openPopup();
+        }
       });
-      setTimeout(() => {
-        markerRef.current.openPopup();
-      }, 2500); 
     }
   }, [props.givenUp, props.answered, props.questionInfo, mapRef, markerRef]);
 
-  return (
+   return (
     <div>
 
       <p>{props.questionInfo.questionText}</p>
@@ -49,7 +48,7 @@ function QuestionAndMap(props) {
             url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png"
           />
 
-          <MapAnswerMarker answerInfo={props.questionInfo} onAnswerClick={props.onAnswerClick} markerRef={markerRef} />
+          <MapAnswerMarker answerInfo={props.questionInfo} onAnswerClick={props.onAnswerClick} markerRef={markerRef} givenUp={props.givenUp} answered={props.answered}/>
 
         </MapContainer>
 

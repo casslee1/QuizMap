@@ -52,9 +52,10 @@ const Game = () => {
       console.log("You are finished");  
       const todaysScore = answeredQuestion.length;
       saveResults(todaysScore);
-      setResultsDialogOpen(true); 
+      //handleClickOpen(); 
+      //setResultsDialogOpen(true); 
       }
-  }, [finished, saveResults, answeredQuestion]);
+  }, [finished, saveResults, answeredQuestion, resultsDialogOpen]);
 
 
   if (loading) {

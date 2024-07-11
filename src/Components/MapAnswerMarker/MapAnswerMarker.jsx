@@ -6,8 +6,10 @@ import styles from './mapAnswerMarker.module.css';
 
 function MapAnswerMarker(props){
   const zoom = useCurrentZoomLevel();
+
+ 
   
-  return zoom >= 4 ? 
+  return zoom >= 4 || props.givenUp === true || props.answered === true ? 
     (<Marker position={[props.answerInfo.lat, props.answerInfo.lon]}  ref={props.markerRef}>
       <Popup className={styles.mapPopup}>
         <Button name={props.answerInfo.answerText} buttonStyle="playButton" handleClick={()=>props.onAnswerClick()}/>
@@ -19,7 +21,9 @@ function MapAnswerMarker(props){
 MapAnswerMarker.propTypes = {
   answerInfo: PropTypes.object,
   onAnswerClick: PropTypes.func,
-  markerRef: PropTypes.object
+  markerRef: PropTypes.object,
+  givenUp: PropTypes.bool,
+  answered: PropTypes.bool
 }
   
 export default MapAnswerMarker;
