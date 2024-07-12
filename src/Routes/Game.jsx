@@ -3,6 +3,7 @@ import Box from '../Components/Box/Box';
 import QuestionAndMap from '../Components/QuestionAndMap/QuestionAndMap';
 import Button from '../Components/Button/Button';
 import Results from '../Components/Results/Results';
+import HowToPlay from '../Components/HowToPlay/HowToPlay';
 import '../Styles/index.css';
 import { useTodaysQuestions } from "../Hooks/useTodaysQuestions";
 import CircularProgress from '@mui/material/CircularProgress';
@@ -15,12 +16,20 @@ const Game = () => {
   const [givenUpQuestion, setGivenUpQuestion] = useState([]);
   const [finished, setFinished] = useState(false);
   const [resultsDialogOpen, setResultsDialogOpen] = useState(false);
+  const [howToDialogOpen, setHowToDialogOpen] = useState(false);
 
   const handleClickOpen = () => {
     setResultsDialogOpen(true);
   };
   const handleClose = () => {
     setResultsDialogOpen(false);
+  };
+
+  const handleClickHowToOpen = () => {
+    setHowToDialogOpen(true);
+  };
+  const handleHowToClose = () => {
+    setHowToDialogOpen(false);
   };
 
   const {questions, loading, error} = useTodaysQuestions();
@@ -76,6 +85,11 @@ const Game = () => {
       <div>
         <Button name="Stats" buttonStyle="smallButton" handleClick={handleClickOpen}/>
           {<Results open={resultsDialogOpen} handleClose={handleClose}/> }
+      </div> 
+
+      <div>
+        <Button name="?" buttonStyle="smallButton" handleClick={handleClickHowToOpen}/>
+          {<HowToPlay openHowTo={howToDialogOpen} handleHowToClose={handleHowToClose}/> }
       </div> 
 
         <div className="gameWrapper">
