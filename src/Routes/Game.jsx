@@ -17,8 +17,9 @@ const Game = () => {
   const [finished, setFinished] = useState(false);
   const [resultsDialogOpen, setResultsDialogOpen] = useState(false);
   const [howToDialogOpen, setHowToDialogOpen] = useState(false);
+  const [dialogPoppedAfterFinished, setDialogPoppedAfterFinished] = useState(false);
 
-  const handleClickOpen = () => {
+    const handleClickOpen = () => {
     setResultsDialogOpen(true);
   };
   const handleClose = () => {
@@ -57,14 +58,14 @@ const Game = () => {
   }, [answeredQuestion, givenUpQuestion]);
 
   useEffect(() => {
-    if (finished === true) {
+    if (finished === true && !dialogPoppedAfterFinished) {
       console.log("You are finished");  
       const todaysScore = answeredQuestion.length;
       saveResults(todaysScore);
-      //handleClickOpen(); 
-      //setResultsDialogOpen(true); 
+      handleClickOpen(); 
+      setDialogPoppedAfterFinished(true);
       }
-  }, [finished, saveResults, answeredQuestion, resultsDialogOpen]);
+  }, [finished, saveResults, answeredQuestion, dialogPoppedAfterFinished]);
 
 
   if (loading) {
