@@ -23,7 +23,7 @@ MapAnswerMarker.propTypes = {
   onAnswerClick: PropTypes.func,
   markerRef: PropTypes.object,
   givenUp: PropTypes.bool,
-  answered: PropTypes.bool
+ answered: PropTypes.bool
 }
   
 export default MapAnswerMarker;

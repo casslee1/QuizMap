@@ -105,7 +105,7 @@ const Game = () => {
 
           <div>
             <h2>Question {selectedQuestion + 1}</h2>
-            <QuestionAndMap questionInfo={question} onAnswerClick={() => handleAnswerClick(selectedQuestion)}  givenUp={givenUpQuestion.includes(selectedQuestion)} answered={answeredQuestion.includes(selectedQuestion)}/>
+            <QuestionAndMap questionInfo={question} questionInfoLatitude={question.lat} questionInfoLongitude={question.lon} onAnswerClick={() => handleAnswerClick(selectedQuestion)}  givenUp={givenUpQuestion.includes(selectedQuestion)} answered={answeredQuestion.includes(selectedQuestion)}/>
           </div>
 
           <div>
