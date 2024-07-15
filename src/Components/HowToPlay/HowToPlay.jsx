@@ -64,7 +64,7 @@ export default function CustomizedDialogs(props) {
                 3. Click on the answer in the popup box to answer the question. When you have answered the question a picture of the answer will fill in the numbered box and the box will be outlined in green.
               </ListItem>
               <ListItem>
-                4. If you are unable to think of the answer, then tap the “I Give Up” button and this will zoom in to the answer on the map. The numbered box will then be filled with a black and white image of the answer and outlined in red.
+                4. If you are unable to think of the answer, tap the “I Give Up” button and this will zoom in to the answer on the map. The numbered box will then be filled with a black and white image of the answer and outlined in red.
               </ListItem>
               <ListItem>
                 5. Answer or give up on all four questions to complete the game. You may play once per day.

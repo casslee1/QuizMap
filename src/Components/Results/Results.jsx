@@ -22,7 +22,7 @@ CustomizedDialogs.propTypes = {
   handleClose: PropTypes.func,
   open: PropTypes.bool,
   results: PropTypes.array,
-  todaysScore: PropTypes.array
+  todaysScore: PropTypes.number
 }
 
 
