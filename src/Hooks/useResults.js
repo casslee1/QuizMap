@@ -21,8 +21,9 @@ export function useResults() {
     localStorage.setItem("results", JSON.stringify(combinedStatistics));
   };
 
-  return { saveResults };
+  return { results, saveResults };
 }
+
 export default useResults;
 
 //return { results: localStorage.setItem("statistics", JSON.stringify(combinedStatistics)), saveResults };

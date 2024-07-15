@@ -37,7 +37,7 @@ const Game = () => {
 
   const question = questions == null ? null : questions[selectedQuestion];
 
-  const {saveResults} = useResults();
+  const {saveResults, results} = useResults();
 
   const handleAnswerClick = (index) => {
     if (!givenUpQuestion.includes(index) && !answeredQuestion.includes(index)){
@@ -85,7 +85,7 @@ const Game = () => {
 
       <div>
         <Button name="Stats" buttonStyle="smallButton" handleClick={handleClickOpen}/>
-          {<Results open={resultsDialogOpen} handleClose={handleClose}/> }
+          {<Results open={resultsDialogOpen} handleClose={handleClose} results={results} todaysScore={answeredQuestion.length}/> }
       </div> 
 
       <div>

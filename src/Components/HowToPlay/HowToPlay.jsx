@@ -7,6 +7,8 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -51,7 +53,23 @@ export default function CustomizedDialogs(props) {
         </IconButton>
         <DialogContent dividers>
           <Typography gutterBottom>
-          Cat ipsum dolor sit amet, peer out window, chatter at birds, lure them to mouth so show belly purr like a car engine oh yes, there is my human slave woman she does best pats ever that all i like about her hiss meow , meow meow you are my owner so here is a dead bird. Sweet beast sleep on my human head dead stare with ears cocked disappear for four days and return home with an expensive injury; bite the vet pooping rainbow while flying in a toasted bread costume in space but hunt anything. Chew the plant. I is playing on your console hooman pooping rainbow while flying in a toasted bread costume in space so kitty making bread on the bathrobe. Immediately regret falling into bathtub wake up wander around the house making large amounts of noise jump on top of your human bed and fall asleep again yet have my breakfast spaghetti yarn so the cat was chasing the mouse. You call this cat food sit in box. It 3am, time to create some chaos .
+            <List>
+              <ListItem>
+                1. Click on one of the number boxes to select a question.
+              </ListItem>
+              <ListItem>
+                2. Find the location of the answer on the map.
+              </ListItem>
+              <ListItem>
+                3. Click on the answer in the popup box to answer the question. When you have answered the question a picture of the answer will fill in the numbered box and the box will be outlined in green.
+              </ListItem>
+              <ListItem>
+                4. If you are unable to think of the answer, then tap the “I Give Up” button and this will zoom in to the answer on the map. The numbered box will then be filled with a black and white image of the answer and outlined in red.
+              </ListItem>
+              <ListItem>
+                5. Answer or give up on all four questions to complete the game. You may play once per day.
+              </ListItem>
+            </List>
           </Typography>
         </DialogContent>
         </BootstrapDialog>

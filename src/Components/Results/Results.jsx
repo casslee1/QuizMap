@@ -20,7 +20,9 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 
 CustomizedDialogs.propTypes = {
   handleClose: PropTypes.func,
-  open: PropTypes.bool
+  open: PropTypes.bool,
+  results: PropTypes.array,
+  todaysScore: PropTypes.array
 }
 
 
@@ -52,13 +54,10 @@ export default function CustomizedDialogs(props) {
         </IconButton>
         <DialogContent dividers>
           <Typography gutterBottom>
-           Todays Score:
+           Todays Score: {props.todaysScore}
           </Typography>
           <Typography gutterBottom>
-            Average Score:
-          </Typography>
-          <Typography gutterBottom>
-           Streak:
+           Times Played: {props.results.length}
           </Typography>
         </DialogContent>
         </BootstrapDialog>
