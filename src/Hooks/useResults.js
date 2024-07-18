@@ -3,6 +3,12 @@ import { useState, useEffect } from "react";
 export function useResults() {
   const [results, setResults] = useState("");
 
+  const date = new Date();
+  const day = date.getdate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+  const todaysDate = `${day}-${month}-${year}`;
+
   useEffect(() => {
     const results = JSON.parse(localStorage.getItem("results"));
     if (results) {
@@ -11,12 +17,12 @@ export function useResults() {
   }, []);
 
   const saveResults = (todaysScore) => {
-    const todaysResults = {
-      date: new Date().getTime(),
+    const newTodaysResults = {
+      date: todaysDate,
       score: todaysScore,
     };
 
-    const combinedStatistics = [...results, todaysResults];
+    const combinedStatistics = [...results, newTodaysResults];
 
     localStorage.setItem("results", JSON.stringify(combinedStatistics));
   };
