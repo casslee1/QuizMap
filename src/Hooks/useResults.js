@@ -3,6 +3,12 @@ import { useState, useEffect } from "react";
 export function useResults() {
   const [results, setResults] = useState("");
 
+  const initialAnsweredQuestion =
+  const initialGivenUpQuestion =
+
+  const [answeredQuestion, setAnsweredQuestion] = useState(initialAnsweredQuestion);
+  const [givenUpQuestion, setGivenUpQuestion] = useState(initialGivenUpQuestion);
+
   const date = new Date();
   const day = date.getdate();
   const month = date.getMonth() + 1;

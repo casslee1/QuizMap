@@ -12,8 +12,7 @@ import useResults from "../Hooks/useResults";
 const Game = () => {
 
   const [selectedQuestion, setSelectedQuestion] = useState(0);
-  const [answeredQuestion, setAnsweredQuestion] = useState([]);
-  const [givenUpQuestion, setGivenUpQuestion] = useState([]);
+
   const [finished, setFinished] = useState(false);
   const [resultsDialogOpen, setResultsDialogOpen] = useState(false);
   const [howToDialogOpen, setHowToDialogOpen] = useState(false);
