@@ -1,22 +1,6 @@
 import { useState, useEffect } from "react";
 
 export function useResults() {
-  const [results, setResults] = useState([]);
-
-  const todaysResults = JSON.parse(localStorage.getItem("todaysResults")) || {};
-
-  const initialAnsweredQuestion = todaysResults.answeredQuestions || [];
-  const initialGivenUpQuestion = todaysResults.givenUpQuestions || [];
-  const initialFinished = todaysResults.finished || false;
-
-  const [answeredQuestion, setAnsweredQuestion] = useState(
-    initialAnsweredQuestion
-  );
-  const [givenUpQuestion, setGivenUpQuestion] = useState(
-    initialGivenUpQuestion
-  );
-  const [finished, setFinished] = useState(initialFinished);
-
   const getTodaysDate = () => {
     const date = new Date();
     const day = date.getDate();
@@ -27,21 +11,43 @@ export function useResults() {
 
   const todaysDate = getTodaysDate();
 
-  useEffect(() => {
-    if (todaysResults.date !== todaysDate) {
-      const clearResults = {
-        date: todaysDate,
-        answeredQuestions: [],
-        givenUpQuestions: [],
-        finished: false,
-      };
+  const localStorageResults = JSON.parse(localStorage.getItem("results")) || [];
 
-      localStorage.setItem("todaysResults", JSON.stringify(clearResults));
-      setAnsweredQuestion([]);
-      setGivenUpQuestion([]);
-      setFinished(false);
-    }
-  }, [todaysResults.date, todaysDate]);
+  const [results, setResults] = useState([localStorageResults]);
+
+  const todaysResults = JSON.parse(localStorage.getItem("todaysResults")) || {};
+
+  //initializetodays results here instead of in useEffect
+
+  let initialAnsweredQuestion = []; //start with empty array
+  let initialGivenUpQuestion = [];
+  let initialFinished = [];
+
+  //if dates don't match clear
+  if (todaysResults.date !== todaysDate) {
+    const clearResults = {
+      date: todaysDate,
+      answeredQuestions: [],
+      givenUpQuestions: [],
+      finished: false,
+    };
+
+    localStorage.setItem("todaysResults", JSON.stringify(clearResults));
+  }
+  //else set as below
+  else {
+    initialAnsweredQuestion = todaysResults.answeredQuestions || [];
+    initialGivenUpQuestion = todaysResults.givenUpQuestions || [];
+    initialFinished = todaysResults.finished || false;
+  }
+
+  const [answeredQuestion, setAnsweredQuestion] = useState(
+    initialAnsweredQuestion
+  );
+  const [givenUpQuestion, setGivenUpQuestion] = useState(
+    initialGivenUpQuestion
+  );
+  const [finished, setFinished] = useState(initialFinished);
 
   useEffect(() => {
     const newTodaysResults = {
@@ -54,23 +60,18 @@ export function useResults() {
     localStorage.setItem("todaysResults", JSON.stringify(newTodaysResults));
   }, [answeredQuestion, givenUpQuestion, finished, todaysDate]);
 
-  useEffect(() => {
-    const results = JSON.parse(localStorage.getItem("results")) || [];
-    if (results) {
-      setResults(results);
-    }
-  }, [todaysDate]);
-
   const saveResults = (todaysScore) => {
     const newTodaysResults = {
       date: todaysDate,
       score: todaysScore,
     };
 
+    //make sure not adding same result, use if statement
     const combinedStatistics = [...results, newTodaysResults];
 
     localStorage.setItem("results", JSON.stringify(combinedStatistics));
-  };
+    setResults(combinedStatistics);
+  }; // if statement to here
 
   const getAverageScore = (results) => {
     if (results.length === 0) return 0;
