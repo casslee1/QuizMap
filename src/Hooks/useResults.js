@@ -17,11 +17,15 @@ export function useResults() {
   );
   const [finished, setFinished] = useState(initialFinished);
 
-  const date = new Date();
-  const day = date.getDate();
-  const month = date.getMonth() + 1;
-  const year = date.getFullYear();
-  const todaysDate = `${day}-${month}-${year}`;
+  const getTodaysDate = () => {
+    const date = new Date();
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    return `${day}-${month}-${year}`;
+  };
+
+  const todaysDate = getTodaysDate();
 
   useEffect(() => {
     if (todaysResults.date !== todaysDate) {
@@ -33,6 +37,9 @@ export function useResults() {
       };
 
       localStorage.setItem("todaysResults", JSON.stringify(clearResults));
+      setAnsweredQuestion([]);
+      setGivenUpQuestion([]);
+      setFinished(false);
     }
   }, [todaysResults.date, todaysDate]);
 
@@ -48,8 +55,8 @@ export function useResults() {
   }, [answeredQuestion, givenUpQuestion, finished, todaysDate]);
 
   useEffect(() => {
-    const results = JSON.parse(localStorage.getItem("results"));
-    if (results.date !== todaysDate) {
+    const results = JSON.parse(localStorage.getItem("results")) || [];
+    if (results) {
       setResults(results);
     }
   }, [todaysDate]);

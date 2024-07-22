@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Description from "../Components/Description/Description";
+import Description from "../Components/HowToPlay/HowToPlay";
 import Button from "../Components/Button/Button";
 import CompassRose from "../SiteImages/CompassRose.png";
 import "../Styles/index.css";
