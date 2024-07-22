@@ -49,10 +49,10 @@ export function useResults() {
 
   useEffect(() => {
     const results = JSON.parse(localStorage.getItem("results"));
-    if (results) {
+    if (results.date !== todaysDate) {
       setResults(results);
     }
-  }, []);
+  }, [todaysDate]);
 
   const saveResults = (todaysScore) => {
     const newTodaysResults = {
@@ -64,6 +64,17 @@ export function useResults() {
 
     localStorage.setItem("results", JSON.stringify(combinedStatistics));
   };
+
+  const getAverageScore = (results) => {
+    if (results.length === 0) return 0;
+    let sum = 0;
+    for (let i = 0; i < results.length; i++) {
+      sum += results[i].score;
+    }
+    return sum / results.length;
+  };
+
+  const averageScore = getAverageScore(results);
 
   const handleAnswerClick = (index) => {
     if (!givenUpQuestion.includes(index) && !answeredQuestion.includes(index)) {
@@ -91,29 +102,8 @@ export function useResults() {
     finished,
     handleAnswerClick,
     handleGiveUpClick,
+    averageScore,
   };
 }
 
 export default useResults;
-
-//return { results: localStorage.setItem("statistics", JSON.stringify(combinedStatistics)), saveResults };
-
-/*export function useResults() {
-  
-  const saveResults = (todaysScore) => {
-    const statistics = {
-      date: new Date().getTime(),
-      score: todaysScore,
-    };
-
-    const previousStatistics =
-      JSON.parse(localStorage.getItem("statistics")) || [];
-
-    const combinedStatistics = [...previousStatistics, statistics];
-
-    localStorage.setItem("statistics", JSON.stringify(combinedStatistics));
-  };
-
-  return { saveResults };
-}
-export default useResults;*/

@@ -22,7 +22,8 @@ CustomizedDialogs.propTypes = {
   handleClose: PropTypes.func,
   open: PropTypes.bool,
   results: PropTypes.array,
-  todaysScore: PropTypes.number
+  todaysScore: PropTypes.number,
+  averageScore: PropTypes.number
 }
 
 
@@ -58,6 +59,9 @@ export default function CustomizedDialogs(props) {
           </Typography>
           <Typography gutterBottom>
            Times Played: {props.results.length}
+          </Typography>
+          <Typography gutterBottom>
+           Average Score: {props.averageScore}
           </Typography>
         </DialogContent>
         </BootstrapDialog>
