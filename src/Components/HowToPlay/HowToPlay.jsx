@@ -24,6 +24,9 @@ CustomizedDialogs.propTypes = {
   openHowTo: PropTypes.bool
 }
 
+CustomizedDialogs.defaultProps = {
+  openHowTo: false
+}
 
 export default function CustomizedDialogs(props) {
 
@@ -34,7 +37,7 @@ export default function CustomizedDialogs(props) {
       <BootstrapDialog
         onClose={props.handleHowToClose}
         aria-labelledby="customized-dialog-title"
-        open={props.openHowTo}
+        open={props.openHowTo} // default false
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
           How To Play
