@@ -83,6 +83,22 @@ export function useResults() {
 
   const averageScore = getAverageScore(results);
 
+  const daysOfZeroScore = results.filter(
+    (item) => parseInt(item.score) === 0
+  ).length;
+  const daysOfOneScore = results.filter(
+    (item) => parseInt(item.score) === 1
+  ).length;
+  const daysOfTwoScore = results.filter(
+    (item) => parseInt(item.score) === 2
+  ).length;
+  const daysOfThreeScore = results.filter(
+    (item) => parseInt(item.score) === 3
+  ).length;
+  const daysOfFourScore = results.filter(
+    (item) => parseInt(item.score) === 4
+  ).length;
+
   const handleAnswerClick = (index) => {
     if (!givenUpQuestion.includes(index) && !answeredQuestion.includes(index)) {
       setAnsweredQuestion([...answeredQuestion, index]);
@@ -110,6 +126,11 @@ export function useResults() {
     handleAnswerClick,
     handleGiveUpClick,
     averageScore,
+    daysOfZeroScore,
+    daysOfOneScore,
+    daysOfTwoScore,
+    daysOfThreeScore,
+    daysOfFourScore,
   };
 }
 

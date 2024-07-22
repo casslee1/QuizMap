@@ -34,7 +34,8 @@ const Game = () => {
 
   const question = questions == null ? null : questions[selectedQuestion];
 
-  const {saveResults, results, answeredQuestion, givenUpQuestion, finished, handleAnswerClick, handleGiveUpClick, averageScore} = useResults();
+  const {saveResults, results, answeredQuestion, givenUpQuestion, finished, handleAnswerClick, handleGiveUpClick, averageScore, 
+    daysOfZeroScore, daysOfOneScore, daysOfTwoScore, daysOfThreeScore, daysOfFourScore} = useResults();
 
 
 
@@ -66,7 +67,8 @@ const Game = () => {
 
       <div>
         <Button name="Stats" buttonStyle="smallButton" handleClick={handleClickOpen}/>
-          {<Results open={resultsDialogOpen} handleClose={handleClose} results={results} todaysScore={answeredQuestion.length} averageScore={averageScore}/> }
+          {<Results open={resultsDialogOpen} handleClose={handleClose} results={results} todaysScore={answeredQuestion.length} averageScore={averageScore} 
+          daysOfZeroScore={daysOfZeroScore} daysOfOneScore={daysOfOneScore} daysOfTwoScore={daysOfTwoScore} daysOfThreeScore={daysOfThreeScore} daysOfFourScore={daysOfFourScore}/> }
       </div> 
 
       <div>

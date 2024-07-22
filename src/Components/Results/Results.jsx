@@ -23,7 +23,12 @@ CustomizedDialogs.propTypes = {
   open: PropTypes.bool,
   results: PropTypes.array,
   todaysScore: PropTypes.number,
-  averageScore: PropTypes.number
+  averageScore: PropTypes.number,
+  daysOfZeroScore: PropTypes.number,
+  daysOfOneScore: PropTypes.number,
+  daysOfTwoScore: PropTypes.number,
+  daysOfThreeScore: PropTypes.number,
+  daysOfFourScore: PropTypes.number
 }
 
 
@@ -62,6 +67,21 @@ export default function CustomizedDialogs(props) {
           </Typography>
           <Typography gutterBottom>
            Average Score: {props.averageScore}
+          </Typography>
+          <Typography gutterBottom>
+           0 correct: {props.daysOfZeroScore}
+          </Typography>
+          <Typography gutterBottom>
+           1 correct: {props.daysOfOneScore}
+          </Typography>
+          <Typography gutterBottom>
+           2 correct: {props.daysOfTwoScore}
+          </Typography>
+          <Typography gutterBottom>
+           3 correct: {props.daysOfThreeScore}
+          </Typography>
+          <Typography gutterBottom>
+           4 correct: {props.daysOfFourScore}
           </Typography>
         </DialogContent>
         </BootstrapDialog>
