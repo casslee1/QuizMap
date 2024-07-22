@@ -12,8 +12,6 @@ import useResults from "../Hooks/useResults";
 const Game = () => {
 
   const [selectedQuestion, setSelectedQuestion] = useState(0);
-
-  const [finished, setFinished] = useState(false);
   const [resultsDialogOpen, setResultsDialogOpen] = useState(false);
   const [howToDialogOpen, setHowToDialogOpen] = useState(false);
   const [dialogPoppedAfterFinished, setDialogPoppedAfterFinished] = useState(false);
@@ -36,25 +34,9 @@ const Game = () => {
 
   const question = questions == null ? null : questions[selectedQuestion];
 
-  const {saveResults, results} = useResults();
+  const {saveResults, results, answeredQuestion, givenUpQuestion, finished, handleAnswerClick, handleGiveUpClick} = useResults();
 
-  const handleAnswerClick = (index) => {
-    if (!givenUpQuestion.includes(index) && !answeredQuestion.includes(index)){
-      setAnsweredQuestion([...answeredQuestion, index]);
-    }
-  };
 
-  const handleGiveUpClick = (index) => {
-    if (!answeredQuestion.includes(index) && !givenUpQuestion.includes(index)){
-      setGivenUpQuestion([...givenUpQuestion, index]);
-    }
-  };
-
-  useEffect(() => {
-    if (answeredQuestion.length + givenUpQuestion.length === 4) {
-      setFinished(true);   
-      }
-  }, [answeredQuestion, givenUpQuestion]);
 
   useEffect(() => {
     if (finished === true && !dialogPoppedAfterFinished) {

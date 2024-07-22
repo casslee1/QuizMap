@@ -21,12 +21,14 @@ function QuestionAndMap(props) {
 
   useEffect(() => {
     if (props.givenUp === true || props.answered === true) {
-      mapRef.current.flyTo([props.questionInfo.lat, props.questionInfo.lon], 13);
-      mapRef.current.once('zoomend', () => {
-        if (markerRef.current) {
-          markerRef.current.openPopup();
-        }
-      });
+      if (mapRef.current){
+       mapRef.current.flyTo([props.questionInfo.lat, props.questionInfo.lon], 13);
+       mapRef.current.once('zoomend', () => {
+          if (markerRef.current) {
+           markerRef.current.openPopup();
+          }
+        });
+      }
     }
   }, [props.givenUp, props.answered, props.questionInfo, mapRef, markerRef]);
 
