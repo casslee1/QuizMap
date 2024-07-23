@@ -79,7 +79,14 @@ export function useResults() {
     for (let i = 0; i < results.length; i++) {
       sum += results[i].score;
     }
-    return sum / results.length;
+
+    let average = sum / results.length;
+
+    if (average > 0) {
+      return average;
+    } else {
+      return 0;
+    }
   };
 
   const averageScore = getAverageScore(results);
