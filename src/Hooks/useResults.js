@@ -67,10 +67,16 @@ export function useResults() {
     };
 
     //make sure not adding same result, use if statement
-    const combinedStatistics = [...results, newTodaysResults];
+    const isDateInResultsAlready = results.some(
+      (result) => result.date === todaysDate
+    );
 
-    localStorage.setItem("results", JSON.stringify(combinedStatistics));
-    setResults(combinedStatistics);
+    if (isDateInResultsAlready === false) {
+      const combinedStatistics = [...results, newTodaysResults];
+
+      localStorage.setItem("results", JSON.stringify(combinedStatistics));
+      setResults(combinedStatistics);
+    }
   }; // if statement to here
 
   const getAverageScore = (results) => {
