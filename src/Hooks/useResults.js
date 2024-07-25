@@ -13,17 +13,14 @@ export function useResults() {
 
   const localStorageResults = JSON.parse(localStorage.getItem("results")) || [];
 
-  const [results, setResults] = useState([localStorageResults]);
+  const [results, setResults] = useState(localStorageResults);
 
   const todaysResults = JSON.parse(localStorage.getItem("todaysResults")) || {};
 
-  //initializetodays results here instead of in useEffect
-
-  let initialAnsweredQuestion = []; //start with empty array
+  let initialAnsweredQuestion = [];
   let initialGivenUpQuestion = [];
-  let initialFinished = [];
+  let initialFinished = false;
 
-  //if dates don't match clear
   if (todaysResults.date !== todaysDate) {
     const clearResults = {
       date: todaysDate,
@@ -31,11 +28,8 @@ export function useResults() {
       givenUpQuestions: [],
       finished: false,
     };
-
     localStorage.setItem("todaysResults", JSON.stringify(clearResults));
-  }
-  //else set as below
-  else {
+  } else {
     initialAnsweredQuestion = todaysResults.answeredQuestions || [];
     initialGivenUpQuestion = todaysResults.givenUpQuestions || [];
     initialFinished = todaysResults.finished || false;
@@ -61,23 +55,25 @@ export function useResults() {
   }, [answeredQuestion, givenUpQuestion, finished, todaysDate]);
 
   const saveResults = (todaysScore) => {
-    const newTodaysResults = {
+    const newResults = {
       date: todaysDate,
       score: todaysScore,
     };
 
-    //make sure not adding same result, use if statement
+    const combinedStatistics = [...results, newResults];
+
     const isDateInResultsAlready = results.some(
       (result) => result.date === todaysDate
     );
 
-    if (isDateInResultsAlready === false) {
-      const combinedStatistics = [...results, newTodaysResults];
+    console.log("Is date in results: " + isDateInResultsAlready);
+    console.log("Length of stats array " + combinedStatistics.length);
 
+    if (combinedStatistics.length !== 0 && isDateInResultsAlready === false) {
       localStorage.setItem("results", JSON.stringify(combinedStatistics));
       setResults(combinedStatistics);
     }
-  }; // if statement to here
+  };
 
   const getAverageScore = (results) => {
     if (results.length === 0) return 0;
