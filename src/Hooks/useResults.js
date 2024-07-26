@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
+import { getCurrentDate } from "../Components/Date/Date";
 
 export function useResults() {
   const getTodaysDate = () => {
-    const date = new Date();
+    /*const date = new Date();
     const day = date.getDate();
     const month = date.getMonth() + 1;
     const year = date.getFullYear();
-    return `${day}-${month}-${year}`;
+    return `${day}-${month}-${year}`;*/
+    getCurrentDate();
   };
 
   const todaysDate = getTodaysDate();
