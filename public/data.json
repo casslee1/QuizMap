@@ -144,7 +144,7 @@
         "questionDay": "4"
     },
     {
-        "questionText": "What famous freestanding bell tower in Italy is known for its unintended tilt?",
+        "questionText": "What famous freestanding bell tower is known for its unintended tilt?",
         "answerText": "The Leaning Tower of Pisa",
         "lat": 43.72316131863278, 
         "lon": 10.396532623498658,
@@ -178,8 +178,8 @@
     {
         "questionText": "What historic site is known as the location where Guglielmo Marconi received the first transatlantic wireless signal?",
         "answerText": "Signal Hill",
-        "lat": 48.75154087541837, 
-        "lon": -52.96507936322266,
+        "lat": 47.570192966034064,  
+        "lon": -52.681914488162306,
         "answerImage": "../Images/SignalHill.png",
         "questionDay": "5"
     },
@@ -187,7 +187,7 @@
         "questionText": "What highly secretive and controversial military facility is often associated with UFO sightings and conspiracy theories about extraterrestrial life?",
         "answerText": "Area 51",
         "lat": 37.235010638957576, 
-        "lon": -115.80820394984026 ,
+        "lon": -115.80820394984026,
         "answerImage": "../Images/Area51.png",
         "questionDay": "5"
     },
