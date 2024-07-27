@@ -90,24 +90,24 @@
     {
         "questionText": "What ancient temple was dedicated to the goddess Athena and is considered one of the most important surviving buildings of Classical Greece?",
         "answerText": "The Parthenon",
-        "lat": 37.973221002152286, 
-        "lon": 23.726349319935377,
+        "lat": 37.97165045085639, 
+        "lon": 23.72665965722673,
         "answerImage": "../Images/Parthenon.png",
         "questionDay": "2"
     },
     {
         "questionText": "What renowned chapel is famous for its ceiling painted by Michelangelo and serves as the site of the papal conclave?",
         "answerText": "The Sistine Chapel",
-        "lat": 41.903209363016025, 
-        "lon": 12.454335698942451,
+        "lat": 41.90299150739308, 
+        "lon": 12.454487512761615,
         "answerImage": "../Images/SistineChapel.png",
         "questionDay": "3"
     },
     {
         "questionText": "What prehistoric monument consists of a ring of standing stones and is believed to have been constructed around 3000 BC to 2000 BC?",
         "answerText": "Stonehenge",
-        "lat": 51.17902993934085, 
-        "lon": -1.8262364607015955,
+        "lat": 51.17905011658622,  
+        "lon": -1.826225732096537,
         "answerImage": "../Images/Stonehenge.png",
         "questionDay": "3"
     },
@@ -170,8 +170,8 @@
     {
         "questionText": "What iconic landmark, originally created as an advertisement for a real estate development, has become a symbol of the American film industry?",
         "answerText": "The Hollywood Sign",
-        "lat": 34.158790984226066, 
-        "lon": -118.3197867781215,
+        "lat": 34.13410899191633,  
+        "lon": -118.32157163634425,
         "answerImage": "../Images/HollywoodSign.png",
         "questionDay": "5"
     },
@@ -202,24 +202,24 @@
     {
         "questionText": "What famous geyser is known for its highly predictable eruptions, attracting tourists with its regular display of boiling water and steam?",
         "answerText": "Old Faithful",
-        "lat": 44.46121113223353, 
-        "lon": -110.82796129537562,
+        "lat": 44.46049422429898, 
+        "lon": -110.82812312991233,
         "answerImage": "../Images/OldFaithful.png",
         "questionDay": "6"
     },
     {
         "questionText": "What famous commercial and entertainment hub is known for its bright lights, electronic billboards, and as the site of the annual New Year's Eve ball drop?",
         "answerText": "Times Square",
-        "lat": 40.758299743213016, 
-        "lon": -73.98549968830842,
+        "lat": 40.75797467126738, 
+        "lon": -73.98555333276636,
         "answerImage": "../Images/TimesSquare.png",
         "questionDay": "6"
     },
     {
         "questionText": "What historic palace complex, once home to emperors and their households, is renowned for its extensive gardens, grand halls, and elaborate architecture?",
         "answerText": "Forbidden City",
-        "lat": 39.917009490472076, 
-        "lon": 116.397312300005,
+        "lat": 39.91380891865201,  
+        "lon": 116.3911729957418,
         "answerImage": "../Images/ForbiddenCity.png",
         "questionDay": "6"
     }
