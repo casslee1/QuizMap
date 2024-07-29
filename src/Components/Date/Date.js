@@ -1,11 +1,13 @@
 export const getCurrentDate = () => {
   const date = new Date();
-  const day = date.getDate() + 1;
+  const day = 27;
   const month = date.getMonth() + 1;
   const year = date.getFullYear();
-  return `${day}-${month}-${year}`;
+  let currentDate = `${day}-${month}-${year}`;
+  return currentDate;
 };
 
 export const getTestingDate = () => {
-  return new Date().getDay() + 1;
+  let testingDate = new Date().getDay();
+  return testingDate;
 };

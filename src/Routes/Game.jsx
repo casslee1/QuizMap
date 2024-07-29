@@ -37,8 +37,6 @@ const Game = () => {
   const {saveResults, results, answeredQuestion, givenUpQuestion, finished, handleAnswerClick, handleGiveUpClick, averageScore, 
     daysOfZeroScore, daysOfOneScore, daysOfTwoScore, daysOfThreeScore, daysOfFourScore} = useResults();
 
-
-
   useEffect(() => {
     if (finished === true && !dialogPoppedAfterFinished) {
       console.log("You are finished");  
@@ -48,7 +46,6 @@ const Game = () => {
       setDialogPoppedAfterFinished(true);
       }
   }, [finished, saveResults, answeredQuestion, dialogPoppedAfterFinished]);
-
 
   if (loading) {
     return <div><CircularProgress /></div>;

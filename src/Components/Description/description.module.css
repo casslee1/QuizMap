@@ -4,15 +4,16 @@
   font-style: normal;
   color: #001f54;
   font-size: 30px;
+  padding: 0;
+  margin: 0;
 }
 
 .descFormat {
-  display: flex;
-  flex-direction: column;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 0%;
-  padding-bottom: 10%;
   text-align: center;
   color: #001f54;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
 }

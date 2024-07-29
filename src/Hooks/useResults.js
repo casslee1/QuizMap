@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getCurrentDate } from "../Components/Date/Date";
+//import { getCurrentDate } from "../Components/Date/Date";
 
 export function useResults() {
   const getTodaysDate = () => {
@@ -8,7 +8,7 @@ export function useResults() {
     const month = date.getMonth() + 1;
     const year = date.getFullYear();
     return `${day}-${month}-${year}`;*/
-    getCurrentDate();
+    return "02-08-2024";
   };
 
   const todaysDate = getTodaysDate();
