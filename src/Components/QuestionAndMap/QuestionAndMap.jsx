@@ -35,15 +35,17 @@ function QuestionAndMap(props) {
    return (
     <div>
 
+    <div className={styles.question}>
       <p>{props.questionInfo.questionText}</p>
-    
+    </div>
+
       <div className={styles.map}>
         <MapContainer
         
           center={[latitude, longitude]}
           zoom={0}
           ref={mapRef}
-          style={{height: "500px", width: "400px"}}>
+          style={{height: "450px", width: "375px"}}>
          
           <TileLayer
             attribution='&copy; <a href="https://carto.com/">carto.com</a> contributors'

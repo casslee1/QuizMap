@@ -23,6 +23,20 @@
   color: #001f54;
 }
 
+.answerButton {
+  background-color: #001f54;
+  border-radius: 20px;
+  border-color: #001f54;
+  font-size: 1rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #bee9e8;
+}
+
 .giveUpButton {
   background-color: #bee9e8;
   color: #001f54;
