@@ -10,8 +10,22 @@ import CircularProgress from '@mui/material/CircularProgress';
 import useResults from "../Hooks/useResults";
 
 const Game = () => {
+  const {saveResults, results, answeredQuestion, givenUpQuestion, finished, handleAnswerClick, handleGiveUpClick, averageScore, 
+    daysOfZeroScore, daysOfOneScore, daysOfTwoScore, daysOfThreeScore, daysOfFourScore} = useResults();
 
-  const [selectedQuestion, setSelectedQuestion] = useState(0);
+let initialQuestion = 0;
+for (let i = 0; i < 3; i++){
+  if (!answeredQuestion.includes(i) && !givenUpQuestion.includes(i)){
+    initialQuestion = i;
+    break;
+  }
+  else {
+    initialQuestion = 0;
+  }
+}
+
+
+  const [selectedQuestion, setSelectedQuestion] = useState(initialQuestion);
   const [resultsDialogOpen, setResultsDialogOpen] = useState(false);
   const [howToDialogOpen, setHowToDialogOpen] = useState(false);
   const [dialogPoppedAfterFinished, setDialogPoppedAfterFinished] = useState(false);
@@ -34,8 +48,7 @@ const Game = () => {
 
   const question = questions == null ? null : questions[selectedQuestion];
 
-  const {saveResults, results, answeredQuestion, givenUpQuestion, finished, handleAnswerClick, handleGiveUpClick, averageScore, 
-    daysOfZeroScore, daysOfOneScore, daysOfTwoScore, daysOfThreeScore, daysOfFourScore} = useResults();
+  
 
   useEffect(() => {
     if (finished === true && !dialogPoppedAfterFinished) {
