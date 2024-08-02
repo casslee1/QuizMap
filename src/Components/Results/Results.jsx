@@ -69,6 +69,9 @@ export default function CustomizedDialogs(props) {
            Average Score: {props.averageScore}
           </Typography>
           <Typography gutterBottom>
+           Guess Distribution:
+          </Typography>
+          <Typography gutterBottom>
            0 correct: {props.daysOfZeroScore}
           </Typography>
           <Typography gutterBottom>
