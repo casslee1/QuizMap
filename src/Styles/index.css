@@ -64,7 +64,8 @@
 
 /*GamePage*/
 .background {
-  background-image: url("../SiteImages/TopoBackground.png");
+  /*background-image: url("../SiteImages/TopoBackground.png");*/
+  background-color: #bee9e8;
   position: absolute;
   width: 100%;
   height: 100%;

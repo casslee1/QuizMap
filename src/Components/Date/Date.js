@@ -8,6 +8,6 @@ export const getCurrentDate = () => {
 };
 
 export const getTestingDate = () => {
-  let testingDate = new Date().getDay();
+  let testingDate = new Date().getDay() + 1;
   return testingDate;
 };

@@ -3,12 +3,12 @@ import { useState, useEffect } from "react";
 
 export function useResults() {
   const getTodaysDate = () => {
-    /*const date = new Date();
+    const date = new Date();
     const day = date.getDate();
     const month = date.getMonth() + 1;
     const year = date.getFullYear();
-    return `${day}-${month}-${year}`;*/
-    return "02-08-2024";
+    return `${day}-${month}-${year}`;
+    //return "01-08-2024";
   };
 
   const todaysDate = getTodaysDate();
