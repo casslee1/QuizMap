@@ -1,6 +1,6 @@
 [
     {
-        "questionText": "When this tower opened in 1889 it was the tallest building in the world.",
+        "questionText": "What tower was the tallest building in the world when it opened in 1889?",
         "answerText": "The Eiffel Tower",
         "lat": 48.85847,
         "lon": 2.29452,
@@ -8,7 +8,7 @@
         "questionDay": "0"
     },
     {
-        "questionText": "This buiding was the tallest freestanding structure in the world from when it was completed in 1975 until 2009.",
+        "questionText": "What building was the tallest freestanding structure in the world from its completion in 1975 until 2009?",
         "answerText": "The CN Tower",
         "lat": 43.6428379111431, 
         "lon": -79.3871426340785,
@@ -16,7 +16,7 @@
         "questionDay": "0"
     },
     {
-        "questionText": "This is the tallest mountain in Japan.",
+        "questionText": "What is the tallest mountain in Japan?",
         "answerText": "Mount Fuji",
         "lat": 35.361639513275634, 
         "lon": 138.72740625302058,
@@ -24,7 +24,7 @@
         "questionDay": "0"
     },
     {
-        "questionText": "The first person to go over this natural feature in a barrel was Annie Edson Taylor in 1901.",
+        "questionText": "What natural feature did Annie Edson Taylor go over in a barrel in 1901, becoming the first person to do so?",
         "answerText": "Niagara Falls",
         "lat": 43.07812024380522, 
         "lon": -79.07557774783723,
@@ -32,7 +32,7 @@
         "questionDay": "0"
     },
     {
-        "questionText": "This is the current home of the British Crown Jewels.",
+        "questionText": "What is the current home of the British Crown Jewels?",
         "answerText": "The Tower of London",
         "lat": 51.50825260251752, 
         "lon": -0.07601367591891797,
@@ -40,7 +40,7 @@
         "questionDay": "1"
     },
     {
-        "questionText": "This is the only one of the seven wonders of the ancient world that remains standing.",
+        "questionText": "What is the only one of the seven wonders of the ancient world that remains standing?",
         "answerText": "The Pyramid of Giza",
         "lat": 29.979384723484486, 
         "lon": 31.134191286737455,
@@ -48,7 +48,7 @@
         "questionDay": "1"
     },
     {
-        "questionText": "This highly photographed and filmed bridge is painted a colour called International Orange and is named after the strait it crosses.",
+        "questionText": "What is the highly photographed and filmed bridge painted a color called International Orange and named after the strait it crosses?",
         "answerText": "The Golden Gate Bridge",
         "lat": 37.82011427548004, 
         "lon": -122.47860271921363,
@@ -56,7 +56,7 @@
         "questionDay": "1"
     },
     {
-        "questionText": "This is where you would have gone to watch gladiator battles approximately 1900 years ago.",
+        "questionText": "Where would you have gone to watch gladiator battles approximately 1900 years ago?",
         "answerText": "The Colosseum",
         "lat": 41.89039379369444, 
         "lon": 12.492220146971382,
@@ -64,7 +64,7 @@
         "questionDay": "1"
     },
     {
-        "questionText": "This is the highest mountain above sea level in the world.",
+        "questionText": "What is the highest mountain above sea level in the world?",
         "answerText": "Mount Everest",
         "lat": 27.988953479006923, 
         "lon": 86.92480337091898,
@@ -72,7 +72,7 @@
         "questionDay": "2"
     },
     {
-        "questionText": "This statue was France's gift to the American people on July 4, 1884.",
+        "questionText": "What statue did France gift to the American people on July 4, 1884?",
         "answerText": "The Statue of Liberty",
         "lat": 40.689493427293314, 
         "lon": -74.0445111324914,
@@ -80,7 +80,7 @@
         "questionDay": "2"
     },
     {
-        "questionText": "What iconic performing arts venue, known for its distinctive sail-like design, was designed by Danish architect Jørn Utzon",
+        "questionText": "What iconic performing arts venue, known for its distinctive sail-like design, was designed by Danish architect Jørn Utzon?",
         "answerText": "The Sydney Opera House",
         "lat": -33.856597271920656, 
         "lon": 151.21528596716473,
@@ -112,7 +112,7 @@
         "questionDay": "3"
     },
     {
-        "questionText": "This is the home of the Mona Lisa.",
+        "questionText": "Which museum is the home of the Mona Lisa?",
         "answerText": "The Louvre",
         "lat": 48.86078753170897, 
         "lon": 2.3375796238072994,
