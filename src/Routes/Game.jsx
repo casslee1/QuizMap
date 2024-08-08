@@ -94,15 +94,16 @@ for (let i = 0; i < 3; i++){
             ))}
           </div>
 
-          <div>
+          
+          <div className='question'>
             <h2>Question {selectedQuestion + 1}</h2>
-            <div className='question'>
-              <p>{question.questionText}</p>
-            </div>
-            <div className="map">
-            <QuestionAndMap questionInfo={question} onAnswerClick={() => handleAnswerClick(selectedQuestion)}  givenUp={givenUpQuestion.includes(selectedQuestion)} answered={answeredQuestion.includes(selectedQuestion)}/>
-            </div>
+            <p>{question.questionText}</p>
           </div>
+
+          <div className="map">
+            <QuestionAndMap questionInfo={question} onAnswerClick={() => handleAnswerClick(selectedQuestion)}  givenUp={givenUpQuestion.includes(selectedQuestion)} answered={answeredQuestion.includes(selectedQuestion)}/>
+          </div>
+          
 
           <div className="giveUpButtonWrapper">
             <Button name="I Give Up" buttonStyle="giveUpButton" handleClick={() => handleGiveUpClick(selectedQuestion)}/>

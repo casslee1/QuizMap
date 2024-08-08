@@ -9,13 +9,13 @@ import "leaflet/dist/leaflet.css";
 function QuestionAndMap(props) {
   const mapRef = useRef(null);
   const markerRef = useRef(null);
-  const latitude = 51.505;
+  const latitude = 20.505;
   const longitude = -0.09;
 
 
   useEffect(() => {
     if(mapRef.current){
-      mapRef.current.setZoom(0)
+      mapRef.current.setZoom(1)
     }
   }, [props.questionInfo]);
 
