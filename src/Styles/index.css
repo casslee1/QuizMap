@@ -110,7 +110,12 @@ h2 {
   padding-top: 10%;
 }
 
-.questionAndMap {
+.question {
+  width: 375px;
+  height: 125px;
+}
+
+.map {
   display: flex;
   flex-direction: column;
   align-items: center;

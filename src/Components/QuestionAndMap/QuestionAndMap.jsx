@@ -35,9 +35,9 @@ function QuestionAndMap(props) {
    return (
     <div>
 
-    <div className={styles.question}>
+    {/*<div className={styles.question}>
       <p>{props.questionInfo.questionText}</p>
-    </div>
+    </div>*/}
 
       <div className={styles.map}>
         <MapContainer

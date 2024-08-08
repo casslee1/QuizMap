@@ -96,7 +96,10 @@ for (let i = 0; i < 3; i++){
 
           <div>
             <h2>Question {selectedQuestion + 1}</h2>
-            <div className="questionAndMap">
+            <div className='question'>
+              <p>{question.questionText}</p>
+            </div>
+            <div className="map">
             <QuestionAndMap questionInfo={question} onAnswerClick={() => handleAnswerClick(selectedQuestion)}  givenUp={givenUpQuestion.includes(selectedQuestion)} answered={answeredQuestion.includes(selectedQuestion)}/>
             </div>
           </div>
