@@ -93,9 +93,8 @@ for (let i = 0; i < 3; i++){
               </div>
             ))}
           </div>
-
           
-          <div className='question'>
+          <div className="question">
             <h2>Question {selectedQuestion + 1}</h2>
             <p>{question.questionText}</p>
           </div>

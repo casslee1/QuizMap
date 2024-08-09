@@ -43,9 +43,9 @@ function QuestionAndMap(props) {
         <MapContainer
         
           center={[latitude, longitude]}
-          zoom={0}
+          zoom={1}
           ref={mapRef}
-          style={{height: "450px", width: "375px"}}>
+          style={{height: "100%", width: "100%"}}>
          
           <TileLayer
             attribution='&copy; <a href="https://carto.com/">carto.com</a> contributors'

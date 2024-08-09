@@ -1,3 +1,9 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
 /*Landing Page*/
 .tenor-sans-regular {
   font-family: "Tenor Sans", sans-serif;
@@ -97,10 +103,21 @@
 
 .gameWrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /*flex-direction: column;*/
   align-items: center;
   padding-top: 5%;
 }
+
+@media screen and (max-width: 600px) {
+  .gameWrapper {
+    flex-direction: column;
+  }
+}
+
+/*.boxWrapper .question .map .giveUpButtonWrapper {
+  flex: 50%;
+}*/
 
 h2 {
   color: #001f54;
@@ -129,20 +146,17 @@ h2 {
 
 .map {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   align-items: center;
   font-size: 1rem;
   background-color: white;
-  padding-left: 5%;
-  padding-right: 5%;
   margin-bottom: 5%;
-  padding-top: 0;
   margin-top: 0;
 }
 
 .giveUpButtonWrapper {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   align-items: center;
 }
 
