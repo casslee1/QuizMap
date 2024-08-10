@@ -44,7 +44,7 @@ export default function CustomizedDialogs(props) {
         aria-labelledby="customized-dialog-title"
         open={props.open}
       >
-        <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
+        <DialogTitle sx={{ m: 0, paddingTop: 2, paddingBottom: 2, paddingLeft: 2, paddingRight: 6 }} id="customized-dialog-title">
           Game Statistics
         </DialogTitle>
         <IconButton
