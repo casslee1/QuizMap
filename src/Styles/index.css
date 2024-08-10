@@ -2,6 +2,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 /*Landing Page*/
@@ -9,10 +10,16 @@ html {
   font-family: "Tenor Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 70px;
+  font-size: 8rem;
   color: #001f54;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .tenor-sans-regular {
+    font-size: 70px;
+  }
 }
 
 .backgroundLanding {
@@ -27,10 +34,8 @@ html {
   right: 0;
   bottom: 0;
   top: 0;
-  overflow: auto;
+  overflow: hidden;
   margin: 0;
-  font-size: 0;
-  padding: 0;
 }
 
 .landingPageTitle {
@@ -38,8 +43,15 @@ html {
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  margin-top: 30%;
-  margin-bottom: 5%;
+  margin-top: 6%;
+  margin-bottom: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  .landingPageTitle {
+    margin-top: 30%;
+    margin-bottom: 5%;
+  }
 }
 
 .compassContainer {
@@ -47,9 +59,17 @@ html {
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  width: 8rem;
-  height: 8rem;
-  margin-bottom: 5%;
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  .compassContainer {
+    margin-bottom: 5%;
+    width: 8rem;
+    height: 8rem;
+  }
 }
 
 .landingPageDescription {
@@ -57,7 +77,13 @@ html {
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  margin-bottom: 8%;
+  margin-bottom: 3%;
+}
+
+@media screen and (max-width: 600px) {
+  .landingPageDescription {
+    margin-bottom: 8%;
+  }
 }
 
 .landingPageButton {
