@@ -11,6 +11,13 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 600px) {
+  .box {
+    width: 95px;
+    height: 95px;
+  }
+}
+
 .answered {
   border: 3px solid green;
 }

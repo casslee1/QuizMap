@@ -75,40 +75,42 @@ for (let i = 0; i < 3; i++){
 
       <div className='background'>
 
-      <div className="smallButtonWrapper">
-        <Button name="Stats" buttonStyle="smallButton" handleClick={handleClickOpen}/>
+        <div className="smallButtonWrapper">
+          <Button name="Stats" buttonStyle="smallButton" handleClick={handleClickOpen}/>
           {<Results open={resultsDialogOpen} handleClose={handleClose} results={results} todaysScore={answeredQuestion.length} averageScore={averageScore} 
           daysOfZeroScore={daysOfZeroScore} daysOfOneScore={daysOfOneScore} daysOfTwoScore={daysOfTwoScore} daysOfThreeScore={daysOfThreeScore} daysOfFourScore={daysOfFourScore}/> }
         <div className="divider"></div>
-        <Button name="?" buttonStyle="smallButton" handleClick={handleClickHowToOpen}/>
+          <Button name="?" buttonStyle="smallButton" handleClick={handleClickHowToOpen}/>
           {<HowToPlay openHowTo={howToDialogOpen} handleHowToClose={handleHowToClose}/> }
-      </div> 
+        </div> 
 
         <div className="gameWrapper">
-
-          <div className="boxWrapper">
-             {questions.map((quest, index) => (
-              <div key={index} onClick={() => setSelectedQuestion(index)} >
-                <Box boxNum={index + 1}  isAnswered={answeredQuestion.includes(index)} gaveUp={givenUpQuestion.includes(index)} boxImage={quest.answerImage} currentBox={selectedQuestion + 1}/>
-              </div>
-            ))}
-          </div>
-          
-          <div className="question">
-            <h2 className="questionHeading">Question {selectedQuestion + 1}</h2>
-            <p>{question.questionText}</p>
-          </div>
 
           <div className="map">
             <QuestionAndMap questionInfo={question} onAnswerClick={() => handleAnswerClick(selectedQuestion)}  givenUp={givenUpQuestion.includes(selectedQuestion)} answered={answeredQuestion.includes(selectedQuestion)}/>
           </div>
+
+          <div className="halfOfLargeScreen">
+
+            <div className="boxWrapper">
+              {questions.map((quest, index) => (
+                <div key={index} onClick={() => setSelectedQuestion(index)} >
+                <Box boxNum={index + 1}  isAnswered={answeredQuestion.includes(index)} gaveUp={givenUpQuestion.includes(index)} boxImage={quest.answerImage} currentBox={selectedQuestion + 1}/>
+                </div>
+              ))}
+            </div>
           
+            <div className="question">
+              <h2 className="questionHeading">Question {selectedQuestion + 1}</h2>
+              <p>{question.questionText}</p>
+              <div className="giveUpButtonWrapper">
+                <Button name="I Give Up" buttonStyle="giveUpButton" handleClick={() => handleGiveUpClick(selectedQuestion)}/>
+              </div>
+            </div>
 
-          <div className="giveUpButtonWrapper">
-            <Button name="I Give Up" buttonStyle="giveUpButton" handleClick={() => handleGiveUpClick(selectedQuestion)}/>
           </div>
-
-        </div>
+             
+         </div>
       </div>
     </div>
   );
@@ -117,3 +119,6 @@ for (let i = 0; i < 3; i++){
 export default Game;
 
 
+// <div className="giveUpButtonWrapper">
+//<Button name="I Give Up" buttonStyle="giveUpButton" handleClick={() => handleGiveUpClick(selectedQuestion)}/>
+//</div>

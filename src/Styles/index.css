@@ -113,8 +113,15 @@ html {
 .smallButtonWrapper {
   display: flex;
   justify-content: flex-end;
-  padding-top: 5%;
-  padding-right: 5%;
+  padding-top: 2%;
+  padding-right: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  .smallButtonWrapper {
+    padding-top: 5%;
+    padding-right: 5%;
+  }
 }
 
 .divider {
@@ -123,17 +130,12 @@ html {
   display: inline-block;
 }
 
-.boxWrapper {
-  display: flex;
-  flex-direction: row;
-}
-
 .gameWrapper {
   display: flex;
   flex-wrap: wrap;
   /*flex-direction: column;*/
   align-items: center;
-  padding-top: 5%;
+  padding-top: 4%;
 }
 
 @media screen and (max-width: 600px) {
@@ -142,6 +144,31 @@ html {
   }
 }
 
+.map {
+  display: flex;
+  /*flex-direction: column;*/
+  align-items: center;
+  font-size: 1rem;
+  background-color: white;
+  margin-bottom: 5%;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .map {
+    margin: auto;
+  }
+}
+
+.boxWrapper {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 600px) {
+  .boxWrapper {
+    justify-content: space-between;
+  }
+}
 /*.boxWrapper .question .map .giveUpButtonWrapper {
   flex: 50%;
 }*/
@@ -162,8 +189,9 @@ html {
   flex-direction: column;
   align-items: left;
   width: 375px;
-  height: 175px;
-  font-size: 1.25rem;
+  /*height: 175px;*/
+  font-size: 1.5rem;
+  color: #001f54;
   margin-bottom: 5%;
   margin-top: 5%;
   border-radius: 10pt;
@@ -171,22 +199,22 @@ html {
   border-width: 1px;
 }
 
-.map {
-  display: flex;
-  /*flex-direction: column;*/
-  align-items: center;
-  font-size: 1rem;
-  background-color: white;
-  margin-bottom: 5%;
-  margin-top: 0;
-}
-
 .giveUpButtonWrapper {
   display: flex;
   /*flex-direction: column;*/
   align-items: center;
+  margin: auto;
+  padding-bottom: 5%;
 }
 
 .descriptionWrapper {
   background-color: white;
+}
+
+@media screen and (min-width: 600px) {
+  .halfOfLargeScreen {
+    width: 40%;
+    /*margin: auto;*/
+    align-items: center;
+  }
 }

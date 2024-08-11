@@ -7,8 +7,6 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -56,23 +54,19 @@ export default function CustomizedDialogs(props) {
         </IconButton>
         <DialogContent dividers>
           <Typography gutterBottom>
-            <List>
-              <ListItem>
-                1. Click on one of the number boxes to select a question.
-              </ListItem>
-              <ListItem>
-                2. Find the location of the answer on the map.
-              </ListItem>
-              <ListItem>
-                3. Click on the answer in the popup box to answer the question. When you have answered the question a picture of the answer will fill in the numbered box and the box will be outlined in green.
-              </ListItem>
-              <ListItem>
-                4. If you are unable to think of the answer, tap the “I Give Up” button and this will zoom in to the answer on the map. The numbered box will then be filled with a black and white image of the answer and outlined in red.
-              </ListItem>
-              <ListItem>
-                5. Answer or give up on all four questions to complete the game. You may play once per day.
-              </ListItem>
-            </List>
+            1. Click on one of the number boxes to select a question.
+          </Typography>
+          <Typography gutterBottom>
+            2. Find the location of the answer on the map.
+          </Typography>
+          <Typography gutterBottom>
+            3. Click on the answer in the popup box to answer the question. When you have answered the question a picture of the answer will fill in the numbered box and the box will be outlined in green.
+          </Typography>
+          <Typography gutterBottom>
+            4. If you are unable to think of the answer, tap the “I Give Up” button and this will zoom in to the answer on the map. The numbered box will then be filled with a black and white image of the answer and outlined in red.
+          </Typography>
+          <Typography gutterBottom>
+            5. Answer or give up on all four questions to complete the game. You may play once per day.
           </Typography>
         </DialogContent>
         </BootstrapDialog>
