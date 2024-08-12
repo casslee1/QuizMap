@@ -48,7 +48,6 @@ for (let i = 0; i < 3; i++){
 
   const question = questions == null ? null : questions[selectedQuestion];
 
-  
 
   useEffect(() => {
     if (finished === true && !dialogPoppedAfterFinished) {
@@ -59,6 +58,7 @@ for (let i = 0; i < 3; i++){
       setDialogPoppedAfterFinished(true);
       }
   }, [finished, saveResults, answeredQuestion, dialogPoppedAfterFinished]);
+ 
 
   if (loading) {
     return <div><CircularProgress /></div>;
@@ -86,6 +86,7 @@ for (let i = 0; i < 3; i++){
 
         <div className="gameWrapper">
 
+          
           <div className="map">
             <QuestionAndMap questionInfo={question} onAnswerClick={() => handleAnswerClick(selectedQuestion)}  givenUp={givenUpQuestion.includes(selectedQuestion)} answered={answeredQuestion.includes(selectedQuestion)}/>
           </div>

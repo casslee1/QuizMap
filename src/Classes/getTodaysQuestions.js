@@ -1,9 +1,10 @@
 import Question from "./question";
-//import { getTestingDate } from "../Components/Date/Date";
+import { getCurrentDate } from "../Components/Date/Date";
 
 export const getTodaysQuestions = async () => {
-  const currentDay = new Date().getDay();
-  //const currentDay = getTestingDate();
+  const date = getCurrentDate();
+  const currentDay = date.getDay();
+  //const currentDay = new Date().getDay();
 
   const response = await fetch("/data.json");
   const data = await response.json();
