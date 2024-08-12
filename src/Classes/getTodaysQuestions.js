@@ -1,12 +1,14 @@
 import Question from "./question";
 import { getCurrentDate } from "../Components/Date/Date";
+import { adjustPath } from "./util";
 
 export const getTodaysQuestions = async () => {
   const date = getCurrentDate();
   const currentDay = date.getDay();
   //const currentDay = new Date().getDay();
 
-  const response = await fetch("/data.json");
+  const adjustedPath = adjustPath("/data.json");
+  const response = await fetch(adjustedPath);
   const data = await response.json();
 
   const questions = data

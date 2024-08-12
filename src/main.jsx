@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     path: "game",
     element: <Game />,
   }
-]);
+], { basename: "/QuizMap" });
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
