@@ -7,8 +7,7 @@ export const getTodaysQuestions = async () => {
   const currentDay = date.getDay();
   //const currentDay = new Date().getDay();
 
-  const adjustedPath = adjustPath("/data.json");
-  const response = await fetch(adjustedPath);
+  const response = await fetch(adjustPath("/data.json"));
   const data = await response.json();
 
   const questions = data
