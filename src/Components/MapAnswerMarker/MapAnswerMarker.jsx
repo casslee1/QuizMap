@@ -12,6 +12,7 @@ function MapAnswerMarker(props){
   return zoom >= 13 || props.givenUp === true || props.answered === true ? 
     (<Marker position={[props.answerInfo.lat, props.answerInfo.lon]}  ref={props.markerRef}>
       <Popup className={styles.mapPopup}>
+        
         <Button name={props.answerInfo.answerText} buttonStyle="answerButton" handleClick={()=>props.onAnswerClick()}/>
       </Popup>
     </Marker>)
