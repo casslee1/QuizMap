@@ -1,6 +1,6 @@
 import styles from './box.module.css';
 import PropTypes from 'prop-types';
-import { adjustPath } from "../Classes/util";
+import { adjustPath } from "../../Classes/util";
 
 const Box = ({boxNum, isAnswered, gaveUp, boxImage, currentBox}) => {
 

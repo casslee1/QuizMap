@@ -4,7 +4,7 @@
         "answerText": "The Eiffel Tower",
         "lat": 48.85847,
         "lon": 2.29452,
-        "answerImage": "../Images/EiffelTower.png",
+        "answerImage": "/Images/EiffelTower.png",
         "questionDay": "0"
     },
     {
@@ -12,7 +12,7 @@
         "answerText": "The CN Tower",
         "lat": 43.6428379111431, 
         "lon": -79.3871426340785,
-        "answerImage": "../Images/CNTower.png",
+        "answerImage": "/Images/CNTower.png",
         "questionDay": "0"
     },
     {
@@ -20,7 +20,7 @@
         "answerText": "Mount Fuji",
         "lat": 35.361639513275634, 
         "lon": 138.72740625302058,
-        "answerImage": "../Images/MountFuji.png",
+        "answerImage": "/Images/MountFuji.png",
         "questionDay": "0"
     },
     {
@@ -28,7 +28,7 @@
         "answerText": "Niagara Falls",
         "lat": 43.07812024380522, 
         "lon": -79.07557774783723,
-        "answerImage": "../Images/NiagaraFalls.png",
+        "answerImage": "/Images/NiagaraFalls.png",
         "questionDay": "0"
     },
     {
@@ -36,7 +36,7 @@
         "answerText": "The Tower of London",
         "lat": 51.50825260251752, 
         "lon": -0.07601367591891797,
-        "answerImage": "../Images/TowerOfLondon.png",
+        "answerImage": "/Images/TowerOfLondon.png",
         "questionDay": "1"
     },
     {
@@ -44,7 +44,7 @@
         "answerText": "The Pyramid of Giza",
         "lat": 29.979384723484486, 
         "lon": 31.134191286737455,
-        "answerImage": "../Images/PyramidOfGiza.png",
+        "answerImage": "/Images/PyramidOfGiza.png",
         "questionDay": "1"
     },
     {
@@ -52,7 +52,7 @@
         "answerText": "The Golden Gate Bridge",
         "lat": 37.82011427548004, 
         "lon": -122.47860271921363,
-        "answerImage": "../Images/GoldenGateBridge.png",
+        "answerImage": "/Images/GoldenGateBridge.png",
         "questionDay": "1"
     },
     {
@@ -60,7 +60,7 @@
         "answerText": "The Colosseum",
         "lat": 41.89039379369444, 
         "lon": 12.492220146971382,
-        "answerImage": "../Images/Colosseum.png",
+        "answerImage": "/Images/Colosseum.png",
         "questionDay": "1"
     },
     {
@@ -68,7 +68,7 @@
         "answerText": "Mount Everest",
         "lat": 27.988953479006923, 
         "lon": 86.92480337091898,
-        "answerImage": "../Images/MountEverest.png",
+        "answerImage": "/Images/MountEverest.png",
         "questionDay": "2"
     },
     {
@@ -76,7 +76,7 @@
         "answerText": "The Statue of Liberty",
         "lat": 40.689493427293314, 
         "lon": -74.0445111324914,
-        "answerImage": "../Images/StatueOfLiberty.png",
+        "answerImage": "/Images/StatueOfLiberty.png",
         "questionDay": "2"
     },
     {
@@ -84,7 +84,7 @@
         "answerText": "The Sydney Opera House",
         "lat": -33.856597271920656, 
         "lon": 151.21528596716473,
-        "answerImage": "../Images/SydneyOperaHouse.png",
+        "answerImage": "/Images/SydneyOperaHouse.png",
         "questionDay": "2"
     },
     {
@@ -92,7 +92,7 @@
         "answerText": "The Parthenon",
         "lat": 37.97165045085639, 
         "lon": 23.72665965722673,
-        "answerImage": "../Images/Parthenon.png",
+        "answerImage": "/Images/Parthenon.png",
         "questionDay": "2"
     },
     {
@@ -100,7 +100,7 @@
         "answerText": "The Sistine Chapel",
         "lat": 41.90299150739308, 
         "lon": 12.454487512761615,
-        "answerImage": "../Images/SistineChapel.png",
+        "answerImage": "/Images/SistineChapel.png",
         "questionDay": "3"
     },
     {
@@ -108,7 +108,7 @@
         "answerText": "Stonehenge",
         "lat": 51.17905011658622,  
         "lon": -1.826225732096537,
-        "answerImage": "../Images/Stonehenge.png",
+        "answerImage": "/Images/Stonehenge.png",
         "questionDay": "3"
     },
     {
@@ -116,7 +116,7 @@
         "answerText": "The Louvre",
         "lat": 48.86078753170897, 
         "lon": 2.3375796238072994,
-        "answerImage": "../Images/Louvre.png",
+        "answerImage": "/Images/Louvre.png",
         "questionDay": "3"
     },
     {
@@ -124,7 +124,7 @@
         "answerText": "The Galápagos Islands",
         "lat": -0.19498311730231407, 
         "lon": -90.43782591969467,
-        "answerImage": "../Images/Galapagos.png",
+        "answerImage": "/Images/Galapagos.png",
         "questionDay": "3"
     },
     {
@@ -132,7 +132,7 @@
         "answerText": "Rapa Nui/Easter Island",
         "lat": -27.110371288610846, 
         "lon": -109.3590750923747,
-        "answerImage": "../Images/RapaNui.png",
+        "answerImage": "/Images/RapaNui.png",
         "questionDay": "4"
     },
     {
@@ -140,7 +140,7 @@
         "answerText": "Mount Kilimanjaro",
         "lat": -3.0652811968910463, 
         "lon": 37.355882729189155,
-        "answerImage": "../Images/MountKilimanjaro.png",
+        "answerImage": "/Images/MountKilimanjaro.png",
         "questionDay": "4"
     },
     {
@@ -148,7 +148,7 @@
         "answerText": "The Leaning Tower of Pisa",
         "lat": 43.72316131863278, 
         "lon": 10.396532623498658,
-        "answerImage": "../Images/LeaningTowerOfPisa.png",
+        "answerImage": "/Images/LeaningTowerOfPisa.png",
         "questionDay": "4"
     },
     {
@@ -156,7 +156,7 @@
         "answerText": "The Palace of Versailles",
         "lat": 48.80502032936824, 
         "lon": 2.120387583326583,
-        "answerImage": "../Images/PalaceOfVersailles.png",
+        "answerImage": "/Images/PalaceOfVersailles.png",
         "questionDay": "4"
     },
     {
@@ -164,7 +164,7 @@
         "answerText": "Lake Louise",
         "lat": 51.41326245676308, 
         "lon": -116.22755294406068,
-        "answerImage": "../Images/LakeLouise.png",
+        "answerImage": "/Images/LakeLouise.png",
         "questionDay": "5"
     },
     {
@@ -172,7 +172,7 @@
         "answerText": "The Hollywood Sign",
         "lat": 34.13410899191633,  
         "lon": -118.32157163634425,
-        "answerImage": "../Images/HollywoodSign.png",
+        "answerImage": "/Images/HollywoodSign.png",
         "questionDay": "5"
     },
     {
@@ -180,7 +180,7 @@
         "answerText": "Signal Hill",
         "lat": 47.570192966034064,  
         "lon": -52.681914488162306,
-        "answerImage": "../Images/SignalHill.png",
+        "answerImage": "/Images/SignalHill.png",
         "questionDay": "5"
     },
     {
@@ -188,7 +188,7 @@
         "answerText": "Area 51",
         "lat": 37.235010638957576, 
         "lon": -115.80820394984026,
-        "answerImage": "../Images/Area51.png",
+        "answerImage": "/Images/Area51.png",
         "questionDay": "5"
     },
     {
@@ -196,7 +196,7 @@
         "answerText": "Lake Victoria",
         "lat": -0.980391458751792, 
         "lon": 32.81138501546246,
-        "answerImage": "../Images/LakeVictoria.png",
+        "answerImage": "/Images/LakeVictoria.png",
         "questionDay": "6"
     },
     {
@@ -204,7 +204,7 @@
         "answerText": "Old Faithful",
         "lat": 44.46049422429898, 
         "lon": -110.82812312991233,
-        "answerImage": "../Images/OldFaithful.png",
+        "answerImage": "/Images/OldFaithful.png",
         "questionDay": "6"
     },
     {
@@ -212,7 +212,7 @@
         "answerText": "Times Square",
         "lat": 40.75797467126738, 
         "lon": -73.98555333276636,
-        "answerImage": "../Images/TimesSquare.png",
+        "answerImage": "/Images/TimesSquare.png",
         "questionDay": "6"
     },
     {
@@ -220,7 +220,7 @@
         "answerText": "Forbidden City",
         "lat": 39.91380891865201,  
         "lon": 116.3911729957418,
-        "answerImage": "../Images/ForbiddenCity.png",
+        "answerImage": "/Images/ForbiddenCity.png",
         "questionDay": "6"
     }
 
