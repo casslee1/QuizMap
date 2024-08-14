@@ -3,14 +3,23 @@ import { Marker, Popup} from "react-leaflet";
 import { useCurrentZoomLevel } from '../../Hooks/useCurrentZoomLevel';
 import Button from '../Button/Button';
 import styles from './mapAnswerMarker.module.css';
+import L from 'leaflet';
 
 function MapAnswerMarker(props){
   const zoom = useCurrentZoomLevel();
 
- 
+  let myIcon = L.icon({
+    iconUrl: './public/Images/marker-icon-2x.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [0, -41],
+    shadowUrl: './public/Images/marker-shadow.png',
+    shadowSize: [41, 41],
+    shadowAnchor: [12, 41]
+});
   
   return zoom >= 13 || props.givenUp === true || props.answered === true ? 
-    (<Marker position={[props.answerInfo.lat, props.answerInfo.lon]}  ref={props.markerRef}>
+    (<Marker icon={myIcon} position={[props.answerInfo.lat, props.answerInfo.lon]}  ref={props.markerRef}>
       <Popup className={styles.mapPopup}>
         <Button name={props.answerInfo.answerText} buttonStyle="answerButton" handleClick={()=>props.onAnswerClick()}/>
       </Popup>
