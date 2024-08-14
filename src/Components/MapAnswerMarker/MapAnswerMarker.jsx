@@ -4,16 +4,17 @@ import { useCurrentZoomLevel } from '../../Hooks/useCurrentZoomLevel';
 import Button from '../Button/Button';
 import styles from './mapAnswerMarker.module.css';
 import L from 'leaflet';
+import { adjustPath } from "../../Classes/util";
 
 function MapAnswerMarker(props){
   const zoom = useCurrentZoomLevel();
 
   let myIcon = L.icon({
-    iconUrl: './public/Images/marker-icon-2x.png',
+    iconUrl: (adjustPath('/Images/marker-icon-2x.png')),
     iconSize: [25, 41],
     iconAnchor: [12, 41],
     popupAnchor: [0, -41],
-    shadowUrl: './public/Images/marker-shadow.png',
+    shadowUrl: (adjustPath('/Images/marker-shadow.png')),
     shadowSize: [41, 41],
     shadowAnchor: [12, 41]
 });
