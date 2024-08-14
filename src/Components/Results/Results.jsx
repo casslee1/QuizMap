@@ -8,6 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
+import { Divider } from '@mui/material';
 //import MediaQuery from 'react-responsive'
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -66,10 +67,11 @@ export default function CustomizedDialogs(props) {
           <Typography gutterBottom>
            Times Played: {props.results.length}
           </Typography>
-          <Typography gutterBottom>
+          <Typography gutterBottom  sx={{marginBottom: 2}}>
            Average Score: {props.averageScore}
           </Typography>
-          <Typography gutterBottom>
+          <Divider />
+          <Typography gutterBottom sx={{marginTop: 2, fontWeight: 500}}>
            Guess Distribution:
           </Typography>
           <Typography gutterBottom>
