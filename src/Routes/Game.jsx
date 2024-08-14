@@ -29,6 +29,7 @@ for (let i = 0; i < 3; i++){
   const [resultsDialogOpen, setResultsDialogOpen] = useState(false);
   const [howToDialogOpen, setHowToDialogOpen] = useState(false);
   const [dialogPoppedAfterFinished, setDialogPoppedAfterFinished] = useState(false);
+  const [showGiveUpButton, setShowGiveUpButton] = useState(true)
 
     const handleClickOpen = () => {
     setResultsDialogOpen(true);
@@ -59,6 +60,14 @@ for (let i = 0; i < 3; i++){
       }
   }, [finished, saveResults, answeredQuestion, dialogPoppedAfterFinished]);
  
+useEffect(() => {
+  if (answeredQuestion.includes(selectedQuestion) || givenUpQuestion.includes(selectedQuestion)) {
+    setShowGiveUpButton(false);
+  }
+  else {
+    setShowGiveUpButton(true);
+  }
+}, [givenUpQuestion, answeredQuestion, selectedQuestion]);
 
   if (loading) {
     return <div><CircularProgress /></div>;
@@ -105,7 +114,7 @@ for (let i = 0; i < 3; i++){
               <h2 className="questionHeading">Question {selectedQuestion + 1}</h2>
               <p>{question.questionText}</p>
               <div className="giveUpButtonWrapper">
-                <Button name="I Give Up" buttonStyle="giveUpButton" handleClick={() => handleGiveUpClick(selectedQuestion)}/>
+                {showGiveUpButton && <Button name="I Give Up" buttonStyle="giveUpButton" handleClick={() => handleGiveUpClick(selectedQuestion)}/>}
               </div>
             </div>
 
