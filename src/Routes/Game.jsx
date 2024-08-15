@@ -89,7 +89,7 @@ useEffect(() => {
           {<Results open={resultsDialogOpen} handleClose={handleClose} results={results} todaysScore={answeredQuestion.length} averageScore={averageScore} 
           daysOfZeroScore={daysOfZeroScore} daysOfOneScore={daysOfOneScore} daysOfTwoScore={daysOfTwoScore} daysOfThreeScore={daysOfThreeScore} daysOfFourScore={daysOfFourScore}/> }
         <div className="divider"></div>
-          <Button name="?" buttonStyle="smallButton" handleClick={handleClickHowToOpen}/>
+          <Button name="Help" buttonStyle="smallButton" handleClick={handleClickHowToOpen}/>
           {<HowToPlay openHowTo={howToDialogOpen} handleHowToClose={handleHowToClose}/> }
         </div> 
 
