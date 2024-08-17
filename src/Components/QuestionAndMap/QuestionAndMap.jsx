@@ -4,6 +4,7 @@ import { useRef, useEffect} from "react";
 import { MapContainer, TileLayer} from "react-leaflet";
 import MapAnswerMarker from "../MapAnswerMarker/MapAnswerMarker";
 import "leaflet/dist/leaflet.css";
+import { useState } from "react";
 
 
 function QuestionAndMap(props) {
@@ -11,6 +12,7 @@ function QuestionAndMap(props) {
   const markerRef = useRef(null);
   const latitude = 20.505;
   const longitude = -0.09;
+  const [currentZoom, setCurrentZoom] = useState(1);
 
 
   useEffect(() => {
@@ -31,6 +33,20 @@ function QuestionAndMap(props) {
       }
     }
   }, [props.givenUp, props.answered, props.questionInfo, mapRef, markerRef]);
+  
+
+
+
+ 
+    /*if (mapRef.current){
+      mapRef.current.on('zoomend', () => {
+        const zoom = mapRef.current.getZoom();
+        setCurrentZoom(zoom);
+        console.log("2 Zoom is " + zoom);
+      });
+    }*/
+ 
+ 
 
    return (
     <div>
@@ -38,6 +54,8 @@ function QuestionAndMap(props) {
     {/*<div className={styles.question}>
       <p>{props.questionInfo.questionText}</p>
     </div>*/}
+
+      <div>Current Zoom Level: {currentZoom}</div>
 
       <div className={styles.map}>
         <MapContainer
