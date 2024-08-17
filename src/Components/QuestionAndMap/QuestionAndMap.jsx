@@ -45,11 +45,14 @@ function QuestionAndMap(props) {
       )}
 
     let isMarkerVisible = "Marker is not visible"
+    let mapStyling = styles.map
+
     if (currentZoom > 6 && currentZoom <13){
       isMarkerVisible = "Zoom in more!"
     }
     else if(currentZoom >= 13) {
-      isMarkerVisible = "Marker is visible!"
+      isMarkerVisible = "Marker is visible!";
+      mapStyling = styles.zoomedInMap
      }
 
     return (
@@ -61,7 +64,7 @@ function QuestionAndMap(props) {
 
       <div>Current Zoom Level: {isMarkerVisible}</div>
 
-      <div className={styles.map}>
+      <div className={mapStyling}>
         <MapContainer
         
           center={[latitude, longitude]}
