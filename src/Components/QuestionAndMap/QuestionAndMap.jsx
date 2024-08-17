@@ -34,21 +34,15 @@ function QuestionAndMap(props) {
     }
   }, [props.givenUp, props.answered, props.questionInfo, mapRef, markerRef]);
   
-
-
-
- 
-    /*if (mapRef.current){
+    if (mapRef.current){
       mapRef.current.on('zoomend', () => {
         const zoom = mapRef.current.getZoom();
         setCurrentZoom(zoom);
         console.log("2 Zoom is " + zoom);
-      });
-    }*/
- 
- 
-
-   return (
+      }
+      )}
+    
+    return (
     <div>
 
     {/*<div className={styles.question}>
