@@ -8,6 +8,7 @@ import '../Styles/index.css';
 import { useTodaysQuestions } from "../Hooks/useTodaysQuestions";
 import CircularProgress from '@mui/material/CircularProgress';
 import useResults from "../Hooks/useResults";
+import CompassRose from "../SiteImages/CompassRose.png";
 
 const Game = () => {
   const {saveResults, results, answeredQuestion, givenUpQuestion, finished, handleAnswerClick, handleGiveUpClick, averageScore, 
@@ -84,24 +85,28 @@ useEffect(() => {
 
       <div className='background'>
 
+        <div className="gameWrapper">
+
+        <div className="cornerLogo"><img src={CompassRose} alt="Compass Rose"/></div>
+
         <div className="smallButtonWrapper">
+          <div>
           <Button name="Stats" buttonStyle="smallButton" handleClick={handleClickOpen}/>
           {<Results open={resultsDialogOpen} handleClose={handleClose} results={results} todaysScore={answeredQuestion.length} averageScore={averageScore} 
           daysOfZeroScore={daysOfZeroScore} daysOfOneScore={daysOfOneScore} daysOfTwoScore={daysOfTwoScore} daysOfThreeScore={daysOfThreeScore} daysOfFourScore={daysOfFourScore}/> }
-        <div className="divider"></div>
+          </div>
+          <div>
           <Button name="Help" buttonStyle="smallButton" handleClick={handleClickHowToOpen}/>
           {<HowToPlay openHowTo={howToDialogOpen} handleHowToClose={handleHowToClose}/> }
+          </div>
         </div> 
 
-        <div className="gameWrapper">
-
-          
           <div className="map">
             <QuestionAndMap questionInfo={question} onAnswerClick={() => handleAnswerClick(selectedQuestion)}  givenUp={givenUpQuestion.includes(selectedQuestion)} answered={answeredQuestion.includes(selectedQuestion)}/>
           </div>
 
-          <div className="halfOfLargeScreen">
-
+          <div className="boxAndQuestionWrapper">
+            <div className="boxAndQuestionAlignment">
             <div className="boxWrapper">
               {questions.map((quest, index) => (
                 <div key={index} onClick={() => setSelectedQuestion(index)} >
@@ -117,7 +122,7 @@ useEffect(() => {
                 {showGiveUpButton && <Button name="I Give Up" buttonStyle="giveUpButton" handleClick={() => handleGiveUpClick(selectedQuestion)}/>}
               </div>
             </div>
-
+            </div>
           </div>
              
          </div>

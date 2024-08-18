@@ -54,16 +54,16 @@ export default function CustomizedDialogs(props) {
         </IconButton>
         <DialogContent dividers>
           <Typography gutterBottom>
-            1. Click on one of the number boxes to select a question.
+            1. Click on one of the numbered boxes to select a question.
           </Typography>
           <Typography gutterBottom>
-            2. Find the location of the answer on the map.
+            2. Find the location of the answer on the map. The answer marker will only appear if you are zoomed in. When you are zoomed in enough to see the marker, the map will be outlined in green and and the text above the map will say: Marker is visible! 
           </Typography>
           <Typography gutterBottom>
             3. Click on the answer in the popup box to answer the question. When you have answered the question a picture of the answer will fill in the numbered box and the box will be outlined in green.
           </Typography>
           <Typography gutterBottom>
-            4. If you are unable to think of the answer, tap the “I Give Up” button and this will zoom in to the answer on the map. The numbered box will then be filled with a black and white image of the answer and outlined in red.
+            4. If you are unable to find the answer, tap the “I Give Up” button and this will zoom in to the answer on the map. The numbered box will then be filled with a black and white image of the answer and outlined in red.
           </Typography>
           <Typography gutterBottom>
             5. Answer or give up on all four questions to complete the game. You may play once per day.

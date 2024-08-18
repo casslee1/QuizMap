@@ -62,7 +62,7 @@ function QuestionAndMap(props) {
       <p>{props.questionInfo.questionText}</p>
     </div>*/}
 
-      <div>Current Zoom Level: {isMarkerVisible}</div>
+      <div className={styles.currentZoomText}>Current Zoom Level: {isMarkerVisible}</div>
 
       <div className={mapStyling}>
         <MapContainer

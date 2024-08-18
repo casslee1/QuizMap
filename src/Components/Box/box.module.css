@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .box {
     width: 95px;
     height: 95px;

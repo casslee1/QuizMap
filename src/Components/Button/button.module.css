@@ -23,6 +23,12 @@
   color: #001f54;
 }
 
+@media screen and (min-width: 768px) {
+  .smallButton {
+    font-size: 19px;
+  }
+}
+
 .answerButton {
   background-color: #001f54;
   border-radius: 20px;
@@ -41,7 +47,7 @@
   background-color: #bee9e8;
   color: #001f54;
   border-radius: 12px;
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 20px;
