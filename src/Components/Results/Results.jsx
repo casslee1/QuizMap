@@ -30,7 +30,8 @@ CustomizedDialogs.propTypes = {
   daysOfOneScore: PropTypes.number,
   daysOfTwoScore: PropTypes.number,
   daysOfThreeScore: PropTypes.number,
-  daysOfFourScore: PropTypes.number
+  daysOfFourScore: PropTypes.number,
+  timesPlayed: PropTypes.number
 }
 
 
@@ -75,19 +76,19 @@ export default function CustomizedDialogs(props) {
            Guess Distribution:
           </Typography>
           <Typography gutterBottom>
-           0 correct: {props.daysOfZeroScore}
+           0 {props.daysOfZeroScore}
           </Typography>
           <Typography gutterBottom>
-           1 correct: {props.daysOfOneScore}
+           1 {props.daysOfOneScore}
           </Typography>
           <Typography gutterBottom>
-           2 correct: {props.daysOfTwoScore}
+           2 {props.daysOfTwoScore}
           </Typography>
           <Typography gutterBottom>
-           3 correct: {props.daysOfThreeScore}
+           3 {props.daysOfThreeScore}
           </Typography>
           <Typography gutterBottom>
-           4 correct: {props.daysOfFourScore}
+           4 {props.daysOfFourScore}
           </Typography>
         </DialogContent>
         </BootstrapDialog>

@@ -96,6 +96,8 @@ export function useResults() {
 
   const averageScore = getAverageScore(results);
 
+  const timesPlayed = results.length;
+
   const daysOfZeroScore = results.filter(
     (item) => parseInt(item.score) === 0
   ).length;
@@ -144,6 +146,7 @@ export function useResults() {
     daysOfTwoScore,
     daysOfThreeScore,
     daysOfFourScore,
+    timesPlayed,
   };
 }
 
