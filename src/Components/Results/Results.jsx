@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 import { Divider } from '@mui/material';
 //import MediaQuery from 'react-responsive'
+import GuessDistribution from '../GuessDistribution/GuessDistribution';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -30,8 +31,7 @@ CustomizedDialogs.propTypes = {
   daysOfOneScore: PropTypes.number,
   daysOfTwoScore: PropTypes.number,
   daysOfThreeScore: PropTypes.number,
-  daysOfFourScore: PropTypes.number,
-  timesPlayed: PropTypes.number
+  daysOfFourScore: PropTypes.number
 }
 
 
@@ -75,7 +75,19 @@ export default function CustomizedDialogs(props) {
           <Typography gutterBottom sx={{marginTop: 2, fontWeight: 500}}>
            Guess Distribution:
           </Typography>
-          <Typography gutterBottom>
+          <GuessDistribution daysOfZeroScore={props.daysOfZeroScore}
+            daysOfOneScore={props.daysOfOneScore}
+            daysOfTwoScore={props.daysOfTwoScore}
+            daysOfThreeScore={props.daysOfThreeScore}
+            daysOfFourScore={props.daysOfFourScore}
+            timesPlayed={props.results.length}/>
+          </DialogContent>
+        </BootstrapDialog>
+    </React.Fragment>
+  );
+}
+
+/* <Typography gutterBottom>
            0 {props.daysOfZeroScore}
           </Typography>
           <Typography gutterBottom>
@@ -89,10 +101,4 @@ export default function CustomizedDialogs(props) {
           </Typography>
           <Typography gutterBottom>
            4 {props.daysOfFourScore}
-          </Typography>
-        </DialogContent>
-        </BootstrapDialog>
-    </React.Fragment>
-  );
-}
-
+          </Typography>*/
