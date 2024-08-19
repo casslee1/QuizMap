@@ -7,7 +7,7 @@ import L from 'leaflet';
 import { adjustPath } from "../../Classes/util";
 
 function MapAnswerMarker(props){
-  const zoom = useCurrentZoomLevel();
+  const zoom = useCurrentZoomLevel(props.zoomLevelChanged);
 
   let myIcon = L.icon({
     iconUrl: (adjustPath('/Images/marker-icon-2x.png')),
@@ -33,7 +33,8 @@ MapAnswerMarker.propTypes = {
   onAnswerClick: PropTypes.func,
   markerRef: PropTypes.object,
   givenUp: PropTypes.bool,
-  answered: PropTypes.bool
+  answered: PropTypes.bool,
+  zoomLevelChanged: PropTypes.func,
 }
   
 export default MapAnswerMarker;

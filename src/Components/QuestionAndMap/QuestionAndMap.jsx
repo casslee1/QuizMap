@@ -36,13 +36,13 @@ function QuestionAndMap(props) {
   
 
 
-    if (mapRef.current){
+   /* if (mapRef.current){
       mapRef.current.on('zoomend', () => {
         const zoom = mapRef.current.getZoom();
         setCurrentZoom(zoom);
         console.log("2 Zoom is " + zoom);
       }
-      )}
+      )}*/
 
     let isMarkerVisible = "Marker is not visible"
     let mapStyling = styles.map
@@ -77,7 +77,7 @@ function QuestionAndMap(props) {
             url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png"
           />
 
-          <MapAnswerMarker answerInfo={props.questionInfo} onAnswerClick={props.onAnswerClick} markerRef={markerRef} givenUp={props.givenUp} answered={props.answered}/>
+          <MapAnswerMarker answerInfo={props.questionInfo} onAnswerClick={props.onAnswerClick} markerRef={markerRef} givenUp={props.givenUp} answered={props.answered} zoomLevelChanged={(zoom) => setCurrentZoom(zoom)}/>
 
         </MapContainer>
 
@@ -93,6 +93,7 @@ QuestionAndMap.propTypes = {
     onAnswerClick: PropTypes.func,
     givenUp: PropTypes.bool,
     answered: PropTypes.bool
+    
 
 }
 
