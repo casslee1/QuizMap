@@ -31,14 +31,14 @@ body {
 
 @media screen and (max-width: 768px) {
   .map {
-    height: 45vh;
+    height: 40vh;
     width: 90vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .zoomedInMap {
-    height: 45vh;
+    height: 40vh;
     width: 90vw;
   }
 }
@@ -49,6 +49,6 @@ body {
 
 @media screen and (max-width: 768px) {
   .currentZoomText {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
