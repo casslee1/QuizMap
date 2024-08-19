@@ -3,14 +3,15 @@ import PropTypes from 'prop-types';
 import styles from './guessDistribution.module.css'
 
 function GuessDistribution(props) {
-  const barWidthZero = (props.daysOfZeroScore === 0) ? "4" : Math.floor((props.daysOfZeroScore / props.timesPlayed) * 80) + 8;
-  const barWidthOne = (props.daysOfOneScore === 0) ? "4" : Math.floor((props.daysOfOneScore / props.timesPlayed) * 80) + 8;
-  const barWidthTwo = (props.daysOfTwoScore === 0) ? "4" : Math.floor((props.daysOfTwoScore / props.timesPlayed) * 80) + 8;
-  const barWidthThree = (props.daysOfThreeScore === 0) ? "4" : Math.floor((props.daysOfThreeScore / props.timesPlayed) * 80) + 8;
-  const barWidthFour = (props.daysOfFourScore === 0) ? "4" : Math.floor((props.daysOfFourScore / props.timesPlayed) * 80) + 8;
+  const barWidthZero = (props.daysOfZeroScore === 0) ? "6" : Math.floor((props.daysOfZeroScore / props.timesPlayed) * 80) + 6;
+  const barWidthOne = (props.daysOfOneScore === 0) ? "6" : Math.floor((props.daysOfOneScore / props.timesPlayed) * 80) + 6;
+  const barWidthTwo = (props.daysOfTwoScore === 0) ? "6" : Math.floor((props.daysOfTwoScore / props.timesPlayed) * 80) + 6;
+  const barWidthThree = (props.daysOfThreeScore === 0) ? "6" : Math.floor((props.daysOfThreeScore / props.timesPlayed) * 80) + 6;
+  const barWidthFour = (props.daysOfFourScore === 0) ? "6" : Math.floor((props.daysOfFourScore / props.timesPlayed) * 80) + 6;
   
   return <div>
     
+    <div className={styles.barWrapper}>
     <div className={styles.scores}>0</div>
     <div className={styles.bars} style={{width: `${barWidthZero}%`}}>
         {props.daysOfZeroScore}
@@ -35,7 +36,7 @@ function GuessDistribution(props) {
     <div className={styles.bars} style={{width: `${barWidthFour}%`}}>
         {props.daysOfFourScore}
     </div>
-
+    </div>
   </div>;
 }
 

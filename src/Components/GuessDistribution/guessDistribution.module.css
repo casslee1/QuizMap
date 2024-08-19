@@ -1,9 +1,16 @@
 .bars {
   background-color: #bee9e8;
   margin-bottom: 5px;
+  padding-right: 2px;
+  text-align: right;
 }
 
 .scores {
   background-color: white;
   margin-bottom: 5px;
+}
+
+.barWrapper {
+  display: grid;
+  grid-template-columns: 10px auto;
 }
