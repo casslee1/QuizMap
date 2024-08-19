@@ -1,8 +1,18 @@
-# React + Vite
+# :earth_africa: Overview :earth_americas:
+Welcome! QuizMap is an online trivia game where players answer questions by finding a location on a map.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Description
+QuizMap takes the online trivia game a step further, once you figure out what the answer is you also have to find where it is. Players are presented with four trivia questions per day. Currently the game has one weeks worth of questions. Full instructions for game play are provided in the game by clicking on the ‘Help’ button. Players’ results are tracked and are accessible through a ‘Stats’ button.
 
-Currently, two official plugins are available:
+# Motivation
+I enjoy daily, limited play games and maps and came up with a fun way to put the two together.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Designed and Built With
+React, CSS, React Leaflet, Material UI, Figma
+
+# Acknowledgements
+Thanks to my coach for this project, Adam Morgan, for sharing his extensive knowledge and providing excellent advice throughout the development of this game.
+
+# Try It Here
+[Click to Play](https://casslee1.github.io/QuizMap/)
+
