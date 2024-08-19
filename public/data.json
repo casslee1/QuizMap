@@ -1,6 +1,6 @@
 [
     {
-        "questionText": "What tower was the tallest building in the world when it opened in 1889?",
+        "questionText": "What tower was the tallest structure in the world when it opened in 1889 for the World's Fair?",
         "answerText": "The Eiffel Tower",
         "lat": 48.85847,
         "lon": 2.29452,
@@ -120,19 +120,19 @@
         "questionDay": "3"
     },
     {
-        "questionText": "What volcanic archipelago in the Pacific Ocean is famous for its unique species of flora and fauna, which played a significant role in Charles Darwin's theory of evolution by natural selection?",
-        "answerText": "The Galápagos Islands",
-        "lat": -0.19498311730231407, 
-        "lon": -90.43782591969467,
-        "answerImage": "/Images/Galapagos.png",
+        "questionText": "What famous commercial and entertainment hub is known for its bright lights, electronic billboards, and as the site of the annual New Year's Eve ball drop?",
+        "answerText": "Times Square",
+        "lat": 40.75797467126738, 
+        "lon": -73.98555333276636,
+        "answerImage": "/Images/TimesSquare.png",
         "questionDay": "3"
     },
     {
-        "questionText": "What island in the Pacific Ocean is known for its nearly 1,000 monumental statues called moai, which are large stone figures carved out of volcanic rock thought to represent ancestors?",
-        "answerText": "Rapa Nui/Easter Island",
-        "lat": -27.110371288610846, 
-        "lon": -109.3590750923747,
-        "answerImage": "/Images/RapaNui.png",
+        "questionText": "What historic castle that sits atop Castle Rock and overlooks a capital city?",
+        "answerText": "Edinburgh Castle",
+        "lat": 55.948636725400924, 
+        "lon": -3.199934960304812,
+        "answerImage": "/Images/EdinburghCastle.png",
         "questionDay": "4"
     },
     {
@@ -192,11 +192,11 @@
         "questionDay": "5"
     },
     {
-        "questionText": "What large lake in East Africa is the source of the Nile River and the largest lake by area in Africa?",
-        "answerText": "Lake Victoria",
-        "lat": -0.980391458751792, 
-        "lon": 32.81138501546246,
-        "answerImage": "/Images/LakeVictoria.png",
+        "questionText": "What famous landmark is an Art Deco statue of Christ with outstretched arms that stands on top of a mountain?",
+        "answerText": "Christ the Redeemer",
+        "lat": -22.95191597922335, 
+        "lon": -43.21049793319799, 
+        "answerImage": "/Images/ChristTheRedeemer.png",
         "questionDay": "6"
     },
     {
@@ -208,11 +208,11 @@
         "questionDay": "6"
     },
     {
-        "questionText": "What famous commercial and entertainment hub is known for its bright lights, electronic billboards, and as the site of the annual New Year's Eve ball drop?",
-        "answerText": "Times Square",
-        "lat": 40.75797467126738, 
-        "lon": -73.98555333276636,
-        "answerImage": "/Images/TimesSquare.png",
+        "questionText": "What is the famous Gothic cathedral known for its twin towers and rose window that also featured as the setting for a novel by Victor Hugo? ",
+        "answerText": "Notre Dame Cathedral",
+        "lat": 48.85298235970702,  
+        "lon": 2.3498914597564062,
+        "answerImage": "/Images/NotreDame.png",
         "questionDay": "6"
     },
     {
