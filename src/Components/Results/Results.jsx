@@ -1,5 +1,4 @@
 import * as React from 'react';
-//import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
@@ -9,7 +8,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 import { Divider } from '@mui/material';
-//import MediaQuery from 'react-responsive'
 import GuessDistribution from '../GuessDistribution/GuessDistribution';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -81,24 +79,8 @@ export default function CustomizedDialogs(props) {
             daysOfThreeScore={props.daysOfThreeScore}
             daysOfFourScore={props.daysOfFourScore}
             timesPlayed={props.results.length}/>
-          </DialogContent>
-        </BootstrapDialog>
+        </DialogContent>
+      </BootstrapDialog>
     </React.Fragment>
   );
 }
-
-/* <Typography gutterBottom>
-           0 {props.daysOfZeroScore}
-          </Typography>
-          <Typography gutterBottom>
-           1 {props.daysOfOneScore}
-          </Typography>
-          <Typography gutterBottom>
-           2 {props.daysOfTwoScore}
-          </Typography>
-          <Typography gutterBottom>
-           3 {props.daysOfThreeScore}
-          </Typography>
-          <Typography gutterBottom>
-           4 {props.daysOfFourScore}
-          </Typography>*/

@@ -136,7 +136,3 @@ useEffect(() => {
   
 export default Game;
 
-
-// <div className="giveUpButtonWrapper">
-//<Button name="I Give Up" buttonStyle="giveUpButton" handleClick={() => handleGiveUpClick(selectedQuestion)}/>
-//</div>

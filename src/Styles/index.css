@@ -97,8 +97,6 @@ html {
 
 /*GamePage*/
 .background {
-  /*background-image: url("../SiteImages/TopoBackground.png");*/
-  /*background-color: #bee9e8;*/
   position: absolute;
   width: 100%;
   height: 100%;
@@ -160,14 +158,6 @@ html {
   padding-right: 2%;
 }
 
-/*@media screen and (max-width: 768px) {
-  .smallButtonWrapper {
-    display: grid;
-    padding-top: 2%;
-    padding-right: 2%;
-  }
-}*/
-
 .map {
   align-items: center;
   margin: auto;
@@ -198,12 +188,8 @@ html {
   .boxAndQuestionWrapper {
     padding-top: 5%;
     justify-self: start;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;*/
     justify-content: left;
     align-items: center;
-    /*margin: auto;*/
   }
 }
 
@@ -212,48 +198,6 @@ html {
     align-items: left;
   }
 }
-
-/*.gameWrapper {
-  display: flex;
-  flex-wrap: wrap;*/
-/*flex-direction: column;*/
-/*align-items: center;
-  padding-top: 4%;
-}
-
-@media screen and (max-width: 768px) {
-  .gameWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4%;
-  }
-}
-
-.map {
-  display: flex;*/
-/*flex-direction: column;*/
-/*align-items: center;
-  font-size: 1rem;
-  background-color: white;
-  margin-bottom: 5%;
-  margin-top: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .map {
-    margin: auto;
-  }
-}*/
-
-/*@media screen and (min-width: 768px) {
-  .boxAndQuestionWrapper {
-    width: 40%;*/
-/*margin: auto;*/
-/*align-items: center;
-  }
-}*/
 
 .boxWrapper {
   display: flex;
@@ -273,7 +217,6 @@ html {
   font-size: 25px;
   background-color: #bee9e8;
   margin: 0;
-  /*padding: 0%;*/
   padding-left: 2%;
   border-radius: 10pt 10pt 0pt 0pt;
 }
@@ -290,7 +233,6 @@ html {
   flex-direction: column;
   align-items: left;
   max-width: 400px;
-  /*height: 175px;*/
   font-size: 20px;
   color: #001f54;
   margin-top: 7%;
@@ -313,7 +255,6 @@ p {
 
 .giveUpButtonWrapper {
   display: flex;
-  /*flex-direction: column;*/
   align-items: center;
   margin: auto;
   padding-bottom: 5%;
