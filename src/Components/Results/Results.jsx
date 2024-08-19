@@ -26,7 +26,7 @@ CustomizedDialogs.propTypes = {
   open: PropTypes.bool,
   results: PropTypes.array,
   todaysScore: PropTypes.number,
-  averageScore: PropTypes.string,
+  averageScore: PropTypes.number,
   daysOfZeroScore: PropTypes.number,
   daysOfOneScore: PropTypes.number,
   daysOfTwoScore: PropTypes.number,
