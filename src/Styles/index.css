@@ -131,8 +131,22 @@ html {
   padding-top: 2%;
 }
 
+.cornerLogoText {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.cornerLogoWrapper {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  color: #001f54;
+  display: flex;
+}
+
 @media screen and (max-width: 768px) {
-  .cornerLogo {
+  .cornerLogoWrapper {
     display: none;
   }
 }
@@ -276,7 +290,7 @@ html {
   align-items: left;
   max-width: 400px;
   /*height: 175px;*/
-  font-size: 15px;
+  font-size: 20px;
   color: #001f54;
   margin-top: 7%;
   border-radius: 10pt;
@@ -287,6 +301,7 @@ html {
 @media screen and (max-width: 768px) {
   .question {
     width: 90vw;
+    font-size: 15px;
   }
 }
 

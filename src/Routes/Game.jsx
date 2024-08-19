@@ -87,7 +87,10 @@ useEffect(() => {
 
         <div className="gameWrapper">
 
-        <div className="cornerLogo"><img src={CompassRose} alt="Compass Rose"/></div>
+        <div className="cornerLogoWrapper">
+          <div className="cornerLogo"><img src={CompassRose} alt="Compass Rose"/></div>
+          <div className="cornerLogoText"><p>QuizMap</p></div>
+        </div>
 
         <div className="smallButtonWrapper">
           <div>
