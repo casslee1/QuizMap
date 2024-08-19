@@ -120,6 +120,7 @@ html {
   .gameWrapper {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 50px auto;
   }
 }
 
@@ -128,6 +129,12 @@ html {
   height: 60px;
   padding-left: 2%;
   padding-top: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .cornerLogo {
+    display: none;
+  }
 }
 
 .smallButtonWrapper {
@@ -164,7 +171,12 @@ html {
   padding-top: 5%;
   justify-content: center;
   align-items: center;
-  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .boxAndQuestionWrapper {
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -174,7 +186,7 @@ html {
     /* display: flex;
     flex-wrap: wrap;
     flex-direction: column;*/
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     /*margin: auto;*/
   }
@@ -185,6 +197,7 @@ html {
     align-items: left;
   }
 }
+
 /*.gameWrapper {
   display: flex;
   flex-wrap: wrap;*/

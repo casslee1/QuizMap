@@ -46,3 +46,9 @@ body {
 .currentZoomText {
   font-size: 1.1em;
 }
+
+@media screen and (max-width: 768px) {
+  .currentZoomText {
+    font-size: 18px;
+  }
+}
