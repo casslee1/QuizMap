@@ -87,6 +87,7 @@ useEffect(() => {
 
         <div className="gameWrapper">
 
+        <div className="topRowWrapper">
         <div className="cornerLogoWrapper">
           <div className="cornerLogo"><img src={CompassRose} alt="Compass Rose"/></div>
           <div className="cornerLogoText"><p>QuizMap</p></div>
@@ -103,13 +104,14 @@ useEffect(() => {
           {<HowToPlay openHowTo={howToDialogOpen} handleHowToClose={handleHowToClose}/> }
           </div>
         </div> 
+        </div>
 
           <div className="map">
             <QuestionAndMap questionInfo={question} onAnswerClick={() => handleAnswerClick(selectedQuestion)}  givenUp={givenUpQuestion.includes(selectedQuestion)} answered={answeredQuestion.includes(selectedQuestion)}/>
           </div>
 
           <div className="boxAndQuestionWrapper">
-            <div className="boxAndQuestionAlignment">
+           
             <div className="boxWrapper">
               {questions.map((quest, index) => (
                 <div key={index} onClick={() => setSelectedQuestion(index)} >
@@ -125,7 +127,7 @@ useEffect(() => {
                 {showGiveUpButton && <Button name="I Give Up" buttonStyle="giveUpButton" handleClick={() => handleGiveUpClick(selectedQuestion)}/>}
               </div>
             </div>
-            </div>
+            
           </div>
              
          </div>
