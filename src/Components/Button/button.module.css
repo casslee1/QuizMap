@@ -16,8 +16,8 @@
   background-color: #bee9e8;
   border-radius: 5px;
   border-color: black;
-  font-size: 14px;
-  padding: 5px;
+  font-size: 12px;
+  padding: 3px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #001f54;
@@ -26,6 +26,7 @@
 @media screen and (min-width: 768px) {
   .smallButton {
     font-size: 19px;
+    padding: 5px;
   }
 }
 
