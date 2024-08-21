@@ -1,16 +1,18 @@
 .bars {
   background-color: #bee9e8;
-  margin-bottom: 5px;
-  padding-right: 2px;
+  margin-bottom: 7px;
+  padding-right: 5px;
   text-align: right;
+  border-radius: 0px 8px 8px 0px;
 }
 
 .scores {
   background-color: white;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .barWrapper {
   display: grid;
-  grid-template-columns: 10px auto;
+  grid-template-columns: 13px auto;
+  padding-left: 10px;
 }
