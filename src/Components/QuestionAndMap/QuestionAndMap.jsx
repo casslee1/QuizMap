@@ -35,15 +35,6 @@ function QuestionAndMap(props) {
   }, [props.givenUp, props.answered, props.questionInfo, mapRef, markerRef]);
   
 
-
-   /* if (mapRef.current){
-      mapRef.current.on('zoomend', () => {
-        const zoom = mapRef.current.getZoom();
-        setCurrentZoom(zoom);
-        console.log("2 Zoom is " + zoom);
-      }
-      )}*/
-
     let isMarkerVisible = "Marker is not visible"
     let mapStyling = styles.map
 
@@ -57,10 +48,6 @@ function QuestionAndMap(props) {
 
     return (
     <div>
-
-    {/*<div className={styles.question}>
-      <p>{props.questionInfo.questionText}</p>
-    </div>*/}
 
       <div className={styles.currentZoomText}>Current Zoom Level: {isMarkerVisible}</div>
 
