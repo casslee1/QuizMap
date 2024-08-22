@@ -35,21 +35,33 @@ function QuestionAndMap(props) {
   }, [props.givenUp, props.answered, props.questionInfo, mapRef, markerRef]);
   
 
-    let isMarkerVisible = "Marker is not visible"
+    let isMarkerVisible = "Current Zoom Level: Marker is not visible."
     let mapStyling = styles.map
 
+
+    if (props.givenUp !== true && props.answered !== true) {
     if (currentZoom > 6 && currentZoom <13){
-      isMarkerVisible = "Zoom in more!"
+      isMarkerVisible = "Current Zoom Level: Zoom in more!"
     }
     else if(currentZoom >= 13) {
-      isMarkerVisible = "Marker is visible!";
+      isMarkerVisible = "Current Zoom Level: Marker is visible!";
       mapStyling = styles.zoomedInMap
      }
+    } 
+    else if (props.answered === true) {
+      isMarkerVisible = "This question has been answered correctly!";
+      mapStyling = styles.zoomedInMap;
+    }
+    else if (props.givenUp === true){
+      isMarkerVisible = "This question has been given up on.";
+      mapStyling = styles.givenUpMap;
+    }
+
 
     return (
     <div>
 
-      <div className={styles.currentZoomText}>Current Zoom Level: {isMarkerVisible}</div>
+      <div className={styles.currentZoomText}>{isMarkerVisible}</div>
 
       <div className={mapStyling}>
         <MapContainer
