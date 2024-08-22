@@ -67,7 +67,7 @@ export default function CustomizedDialogs(props) {
            Times Played: {props.results.length}
           </Typography>
           <Typography gutterBottom  sx={{marginBottom: 2}}>
-           Average Score: {props.averageScore}
+           Average Score: {props.averageScore.toFixed(1)}
           </Typography>
           <Divider />
           <Typography gutterBottom sx={{marginTop: 2, fontWeight: 500}}>

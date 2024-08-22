@@ -85,10 +85,10 @@ export function useResults() {
     }
 
     let average = sum / results.length;
-    let roundedAverage = average.toFixed(1);
+    //let roundedAverage = average.toFixed(1);
 
-    if (roundedAverage > 0) {
-      return roundedAverage;
+    if (average > 0) {
+      return average;
     } else {
       return 0;
     }
