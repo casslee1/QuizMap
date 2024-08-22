@@ -27,24 +27,45 @@ body {
   width: 40vw;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .map {
     height: 40vh;
     width: 90vw;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .givenUpMap {
     height: 40vh;
     width: 90vw;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .zoomedInMap {
     height: 40vh;
     width: 90vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .map {
+    height: 40vh;
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .givenUpMap {
+    height: 40vh;
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .zoomedInMap {
+    height: 40vh;
+    width: 500px;
   }
 }
 
@@ -52,8 +73,14 @@ body {
   font-size: 1.1em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .currentZoomText {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .currentZoomText {
+    font-size: 15px;
   }
 }

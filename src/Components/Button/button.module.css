@@ -23,7 +23,14 @@
   color: #001f54;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
+  .smallButton {
+    font-size: 17px;
+    padding: 4px;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .smallButton {
     font-size: 19px;
     padding: 5px;
