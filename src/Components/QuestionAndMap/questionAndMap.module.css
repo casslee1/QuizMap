@@ -48,21 +48,21 @@ body {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 601px) and (max-width: 992px) {
   .map {
     height: 40vh;
     width: 500px;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 601px) and (max-width: 992px) {
   .givenUpMap {
     height: 40vh;
     width: 500px;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 601px) and (max-width: 992px) {
   .zoomedInMap {
     height: 40vh;
     width: 500px;
@@ -79,7 +79,7 @@ body {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 601px) and (max-width: 992px) {
   .currentZoomText {
     font-size: 15px;
   }
