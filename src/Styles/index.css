@@ -96,6 +96,7 @@ html {
 }
 
 /*GamePage*/
+/*Page breaks: <600px small/phone, 601px - 992px med/tablet, 993px - 1200px large/laptop, >1200px monitor*/
 .background {
   position: absolute;
   width: 100%;
