@@ -333,6 +333,14 @@ html {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .question {
+    max-width: 500px;
+    font-size: 20px;
+    margin-top: 1em;
+  }
+}
+
 p {
   padding-left: 7px;
   padding-right: 7px;

@@ -19,6 +19,14 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .box {
+    width: 125px;
+    height: 125px;
+    font-size: 3em;
+  }
+}
+
 .answered {
   border: 3px solid lightgreen;
 }
