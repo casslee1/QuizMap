@@ -197,7 +197,7 @@ html {
 @media screen and (max-width: 600px) {
   .cornerLogoText {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 
@@ -325,7 +325,7 @@ html {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 601px) and (max-width: 992px) {
   .question {
     width: 90vw;
     font-size: 20px;
