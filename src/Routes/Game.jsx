@@ -15,7 +15,7 @@ const Game = () => {
     daysOfZeroScore, daysOfOneScore, daysOfTwoScore, daysOfThreeScore, daysOfFourScore} = useResults();
 
 let initialQuestion = 0;
-for (let i = 0; i < 3; i++){
+for (let i = 0; i < 4; i++){
   if (!answeredQuestion.includes(i) && !givenUpQuestion.includes(i)){
     initialQuestion = i;
     break;
