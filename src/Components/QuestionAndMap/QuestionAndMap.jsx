@@ -40,10 +40,10 @@ function QuestionAndMap(props) {
 
 
     if (props.givenUp !== true && props.answered !== true) {
-    if (currentZoom > 6 && currentZoom <13){
+    if (currentZoom > 6 && currentZoom <10){
       isMarkerVisible = "Current Zoom Level: Zoom in more!"
     }
-    else if(currentZoom >= 13) {
+    else if(currentZoom >= 10) {
       isMarkerVisible = "Current Zoom Level: Marker is visible!";
       mapStyling = styles.zoomedInMap
      }
