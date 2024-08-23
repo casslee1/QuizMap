@@ -23,17 +23,6 @@ function QuestionAndMap(props) {
   }, [props.questionInfo]);
 
   useEffect(() => {
-    if (mapRef.current) {
-      const map = mapRef.current;
-      const southWest = L.latLng(-90, -180);
-      const northEast = L.latLng(90, 180);
-      const bounds = L.latLngBounds(southWest, northEast);
-      map.setMaxBounds(bounds);
-      map.options.maxBoundsViscosity = 1.0;
-    }
-  }, []); 
-
-  useEffect(() => {
     if (props.givenUp === true || props.answered === true) {
       if (mapRef.current){
        mapRef.current.flyTo([props.questionInfo.lat, props.questionInfo.lon], 13);
@@ -81,6 +70,8 @@ function QuestionAndMap(props) {
           center={[latitude, longitude]}
           zoom={1}
           minZoom={1}
+          maxBounds={[[-90, -180], [90, 180]]}
+          maxBoundsViscosity={1}
           ref={mapRef}
           style={{height: "100%", width: "100%"}}>
          
