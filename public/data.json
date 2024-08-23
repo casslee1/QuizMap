@@ -184,11 +184,11 @@
         "questionDay": "5"
     },
     {
-        "questionText": "What highly secretive and controversial military facility is often associated with UFO sightings and conspiracy theories about extraterrestrial life?",
-        "answerText": "Area 51",
-        "lat": 37.235010638957576, 
-        "lon": -115.80820394984026,
-        "answerImage": "/Images/Area51.png",
+        "questionText": "What is currently the tallest building in the world?",
+        "answerText": "Burj Khalifa",
+        "lat": 25.195495862368556,
+        "lon": 55.27537344364083,
+        "answerImage": "/Images/BurjKhalifa.png",
         "questionDay": "5"
     },
     {
