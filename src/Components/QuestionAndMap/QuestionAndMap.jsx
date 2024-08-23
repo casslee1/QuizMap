@@ -5,6 +5,7 @@ import { MapContainer, TileLayer} from "react-leaflet";
 import MapAnswerMarker from "../MapAnswerMarker/MapAnswerMarker";
 import "leaflet/dist/leaflet.css";
 import { useState } from "react";
+import L from "leaflet";
 
 
 function QuestionAndMap(props) {
@@ -20,6 +21,17 @@ function QuestionAndMap(props) {
       mapRef.current.setZoom(1)
     }
   }, [props.questionInfo]);
+
+  useEffect(() => {
+    if (mapRef.current) {
+      const map = mapRef.current;
+      const southWest = L.latLng(-90, -180);
+      const northEast = L.latLng(90, 180);
+      const bounds = L.latLngBounds(southWest, northEast);
+      map.setMaxBounds(bounds);
+      map.options.maxBoundsViscosity = 1.0;
+    }
+  }, []); 
 
   useEffect(() => {
     if (props.givenUp === true || props.answered === true) {
@@ -68,6 +80,7 @@ function QuestionAndMap(props) {
         
           center={[latitude, longitude]}
           zoom={1}
+          minZoom={1}
           ref={mapRef}
           style={{height: "100%", width: "100%"}}>
          
