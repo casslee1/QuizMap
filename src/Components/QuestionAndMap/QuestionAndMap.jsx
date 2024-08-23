@@ -5,7 +5,6 @@ import { MapContainer, TileLayer} from "react-leaflet";
 import MapAnswerMarker from "../MapAnswerMarker/MapAnswerMarker";
 import "leaflet/dist/leaflet.css";
 import { useState } from "react";
-import L from "leaflet";
 
 
 function QuestionAndMap(props) {
